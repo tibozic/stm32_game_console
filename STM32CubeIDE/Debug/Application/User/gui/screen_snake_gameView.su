@@ -1,0 +1,20 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:22:6:virtual void screen_snake_gameView::tearDownScreen()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:307:6:virtual void screen_snake_gameView::change_direction_up()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:311:6:virtual void screen_snake_gameView::change_direction_down()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:315:6:virtual void screen_snake_gameView::change_direction_left()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:319:6:virtual void screen_snake_gameView::change_direction_right()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:323:5:virtual int screen_snake_gameView::pseudo_random(int)	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:327:5:virtual int screen_snake_gameView::pseudo_random2(int)	0	static
+../../TouchGFX/gui/include/gui/screen_snake_game_screen/screen_snake_gameView.hpp:41:13:screen_snake_gameView::~screen_snake_gameView()	8	static
+../../TouchGFX/gui/include/gui/screen_snake_game_screen/screen_snake_gameView.hpp:41:13:virtual screen_snake_gameView::~screen_snake_gameView()	8	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:12:1:screen_snake_gameView::screen_snake_gameView()	8	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:329:1:cpp)	4	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:329:1:cpp)	16	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:17:6:virtual void screen_snake_gameView::setupScreen()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:27:6:virtual void screen_snake_gameView::game_snake_start()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:75:6:virtual void screen_snake_gameView::handleTickEvent()	48	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp:299:6:virtual void screen_snake_gameView::error()	56	static

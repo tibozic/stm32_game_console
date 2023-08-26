@@ -1,0 +1,6 @@
+../../TouchGFX/gui/include/gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp:28:13:screen_snake_gamePresenter::~screen_snake_gamePresenter()	1
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gamePresenter.cpp:10:6:virtual void screen_snake_gamePresenter::activate()	1
+../../TouchGFX/gui/include/gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp:28:13:virtual screen_snake_gamePresenter::~screen_snake_gamePresenter()	1
+../../TouchGFX/gui/include/gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp:28:13:virtual void* screen_snake_gamePresenter::_ZThn4_N26screen_snake_gamePresenterD1Ev()	1
+../../TouchGFX/gui/include/gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp:28:13:virtual void* screen_snake_gamePresenter::_ZThn4_N26screen_snake_gamePresenterD0Ev()	1
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gamePresenter.cpp:4:1:screen_snake_gamePresenter::screen_snake_gamePresenter(screen_snake_gameView&)	1

@@ -1,0 +1,6 @@
+../../TouchGFX/gui/include/gui/screen_main_menu_screen/screen_main_menuPresenter.hpp:28:13:screen_main_menuPresenter::~screen_main_menuPresenter()	1
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_main_menu_screen/screen_main_menuPresenter.cpp:10:6:virtual void screen_main_menuPresenter::activate()	1
+../../TouchGFX/gui/include/gui/screen_main_menu_screen/screen_main_menuPresenter.hpp:28:13:virtual screen_main_menuPresenter::~screen_main_menuPresenter()	1
+../../TouchGFX/gui/include/gui/screen_main_menu_screen/screen_main_menuPresenter.hpp:28:13:virtual void* screen_main_menuPresenter::_ZThn4_N25screen_main_menuPresenterD1Ev()	1
+../../TouchGFX/gui/include/gui/screen_main_menu_screen/screen_main_menuPresenter.hpp:28:13:virtual void* screen_main_menuPresenter::_ZThn4_N25screen_main_menuPresenterD0Ev()	1
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_main_menu_screen/screen_main_menuPresenter.cpp:4:1:screen_main_menuPresenter::screen_main_menuPresenter(screen_main_menuView&)	1

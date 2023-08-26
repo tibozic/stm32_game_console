@@ -1,0 +1,18 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:351:44:virtual uint16_t touchgfx::Font::getHeight() const	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:33:1:screen_main_menuViewBase::~screen_main_menuViewBase()	0	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:38:6:virtual void screen_main_menuViewBase::setupScreen()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<screen_main_menuViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = screen_main_menuViewBase; T1 = const touchgfx::AbstractButton&]	4	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = screen_main_menuViewBase; T1 = const touchgfx::AbstractButton&]	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<screen_main_menuViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:33:1:virtual screen_main_menuViewBase::~screen_main_menuViewBase()	8	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:43:6:void screen_main_menuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:9:1:screen_main_menuViewBase::screen_main_menuViewBase()	48	static

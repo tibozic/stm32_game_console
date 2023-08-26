@@ -1,0 +1,17 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:28:6:virtual void screen_tictactoe_gameView::tearDownScreen()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:273:7:virtual short int screen_tictactoe_gameView::is_game_over(int, int)	12	static
+../../TouchGFX/gui/include/gui/screen_tictactoe_game_screen/screen_tictactoe_gameView.hpp:12:13:screen_tictactoe_gameView::~screen_tictactoe_gameView()	8	static
+../../TouchGFX/gui/include/gui/screen_tictactoe_game_screen/screen_tictactoe_gameView.hpp:12:13:virtual screen_tictactoe_gameView::~screen_tictactoe_gameView()	8	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:9:1:screen_tictactoe_gameView::screen_tictactoe_gameView()	8	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:23:6:virtual void screen_tictactoe_gameView::setupScreen()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:33:6:virtual void screen_tictactoe_gameView::pos1_clicked()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:59:6:virtual void screen_tictactoe_gameView::pos2_clicked()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:85:6:virtual void screen_tictactoe_gameView::pos3_clicked()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:111:6:virtual void screen_tictactoe_gameView::pos4_clicked()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:137:6:virtual void screen_tictactoe_gameView::pos5_clicked()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:163:6:virtual void screen_tictactoe_gameView::pos6_clicked()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:189:6:virtual void screen_tictactoe_gameView::pos7_clicked()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:215:6:virtual void screen_tictactoe_gameView::pos8_clicked()	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gameView.cpp:241:6:virtual void screen_tictactoe_gameView::pos9_clicked()	24	static

@@ -1,0 +1,6 @@
+../../TouchGFX/gui/include/gui/screen_tictactoe_game_2_1_screen/screen_tictactoe_game_2_1Presenter.hpp:28:13:screen_tictactoe_game_2_1Presenter::~screen_tictactoe_game_2_1Presenter()	1
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_2_1_screen/screen_tictactoe_game_2_1Presenter.cpp:10:6:virtual void screen_tictactoe_game_2_1Presenter::activate()	1
+../../TouchGFX/gui/include/gui/screen_tictactoe_game_2_1_screen/screen_tictactoe_game_2_1Presenter.hpp:28:13:virtual screen_tictactoe_game_2_1Presenter::~screen_tictactoe_game_2_1Presenter()	1
+../../TouchGFX/gui/include/gui/screen_tictactoe_game_2_1_screen/screen_tictactoe_game_2_1Presenter.hpp:28:13:virtual void* screen_tictactoe_game_2_1Presenter::_ZThn4_N34screen_tictactoe_game_2_1PresenterD1Ev()	1
+../../TouchGFX/gui/include/gui/screen_tictactoe_game_2_1_screen/screen_tictactoe_game_2_1Presenter.hpp:28:13:virtual void* screen_tictactoe_game_2_1Presenter::_ZThn4_N34screen_tictactoe_game_2_1PresenterD0Ev()	1
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_tictactoe_game_2_1_screen/screen_tictactoe_game_2_1Presenter.cpp:4:1:screen_tictactoe_game_2_1Presenter::screen_tictactoe_game_2_1Presenter(screen_tictactoe_game_2_1View&)	1
