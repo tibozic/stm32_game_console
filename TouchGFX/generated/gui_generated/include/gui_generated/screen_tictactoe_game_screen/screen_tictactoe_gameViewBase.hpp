@@ -27,6 +27,38 @@ public:
     {
         // Override and implement this function in screen_tictactoe_game
     }
+    virtual void pos2_clicked()
+    {
+        // Override and implement this function in screen_tictactoe_game
+    }
+    virtual void pos3_clicked()
+    {
+        // Override and implement this function in screen_tictactoe_game
+    }
+    virtual void pos4_clicked()
+    {
+        // Override and implement this function in screen_tictactoe_game
+    }
+    virtual void pos5_clicked()
+    {
+        // Override and implement this function in screen_tictactoe_game
+    }
+    virtual void pos6_clicked()
+    {
+        // Override and implement this function in screen_tictactoe_game
+    }
+    virtual void pos7_clicked()
+    {
+        // Override and implement this function in screen_tictactoe_game
+    }
+    virtual void pos8_clicked()
+    {
+        // Override and implement this function in screen_tictactoe_game
+    }
+    virtual void pos9_clicked()
+    {
+        // Override and implement this function in screen_tictactoe_game
+    }
 
 protected:
     FrontendApplication& application() {

@@ -18,7 +18,15 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	1
 ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:65:34:virtual touchgfx::Bitmap::BitmapFormat touchgfx::LCD16bpp::framebufferFormat() const	1
 ../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:26:18:virtual void screen_tictactoe_gameViewBase::pos1_clicked()	1
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:237:6:virtual void screen_tictactoe_gameViewBase::setupScreen()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:30:18:virtual void screen_tictactoe_gameViewBase::pos2_clicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:34:18:virtual void screen_tictactoe_gameViewBase::pos3_clicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:38:18:virtual void screen_tictactoe_gameViewBase::pos4_clicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:42:18:virtual void screen_tictactoe_gameViewBase::pos5_clicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:46:18:virtual void screen_tictactoe_gameViewBase::pos6_clicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:50:18:virtual void screen_tictactoe_gameViewBase::pos7_clicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:54:18:virtual void screen_tictactoe_gameViewBase::pos8_clicked()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:58:18:virtual void screen_tictactoe_gameViewBase::pos9_clicked()	1
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:245:6:virtual void screen_tictactoe_gameViewBase::setupScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:123:18:void touchgfx::BoxWithBorderButtonStyle<T>::handlePressedUpdated() [with T = touchgfx::ClickButtonTrigger]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<screen_tictactoe_gameViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:41:7:touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger>::~BoxWithBorderButtonStyle()	1
@@ -27,9 +35,9 @@ C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:131:18:void touchgfx::BoxWithBorderButtonStyle<T>::handleAlphaUpdated() [with T = touchgfx::ClickButtonTrigger]	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:41:7:virtual touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger>::~BoxWithBorderButtonStyle()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<screen_tictactoe_gameViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	1
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:232:1:screen_tictactoe_gameViewBase::~screen_tictactoe_gameViewBase()	1
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:232:1:virtual screen_tictactoe_gameViewBase::~screen_tictactoe_gameViewBase()	1
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:242:6:void screen_tictactoe_gameViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	3
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:240:1:screen_tictactoe_gameViewBase::~screen_tictactoe_gameViewBase()	1
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:240:1:virtual screen_tictactoe_gameViewBase::~screen_tictactoe_gameViewBase()	1
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:250:6:void screen_tictactoe_gameViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	19
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	10
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp:47:18:virtual void touchgfx::ClickButtonTrigger::handleClickEvent(const touchgfx::ClickEvent&)	14
 C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:9:1:screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase()	55

@@ -267,7 +267,7 @@
             "X": 118,
             "Y": 112,
             "Width": 244,
-            "Height": 41,
+            "Height": 49,
             "Visible": false,
             "TextId": "__SingleUse_6BFI",
             "TextRotation": "0",
@@ -986,6 +986,94 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "pos1_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_pos2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_pos2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pos2_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_pos3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_pos3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pos3_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_pos4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_pos4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pos4_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_pos5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_pos5"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pos5_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_pos6",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_pos6"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pos6_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_pos7",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_pos7"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pos7_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_pos8",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_pos8"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pos8_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_pos9",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_pos9"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "pos9_clicked"
             }
           }
         ]

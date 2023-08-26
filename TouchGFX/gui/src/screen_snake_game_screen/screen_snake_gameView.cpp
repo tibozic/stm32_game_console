@@ -41,7 +41,7 @@ void screen_snake_gameView::game_snake_start()
 
 	snake_pixels[0] = Box();
 
-	if( head != NULL )
+	if( head == NULL )
 		head = (snake_piece*)malloc(sizeof(snake_piece));
 
 	if( head == NULL ) {

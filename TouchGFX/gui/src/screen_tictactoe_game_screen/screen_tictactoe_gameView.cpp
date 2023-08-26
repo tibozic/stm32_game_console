@@ -31,7 +31,7 @@ void screen_tictactoe_gameView::tearDownScreen()
 }
 
 void screen_tictactoe_gameView::pos1_clicked() {
-	if( board[0][0] != 0 ) {
+	if( board[0][0] == 0 ) {
 		if( turn ) {
 			board[0][0] = 'X';
 			pos1_cross.setVisible(true);
@@ -57,7 +57,7 @@ void screen_tictactoe_gameView::pos1_clicked() {
 }
 
 void screen_tictactoe_gameView::pos2_clicked() {
-	if( board[0][1] != 0 ) {
+	if( board[0][1] == 0 ) {
 		if( turn ) {
 			board[0][1] = 'X';
 			pos2_cross.setVisible(true);
@@ -83,7 +83,7 @@ void screen_tictactoe_gameView::pos2_clicked() {
 }
 
 void screen_tictactoe_gameView::pos3_clicked() {
-	if( board[0][2] != 0 ) {
+	if( board[0][2] == 0 ) {
 		if( turn ) {
 			board[0][2] = 'X';
 			pos3_cross.setVisible(true);
@@ -109,7 +109,7 @@ void screen_tictactoe_gameView::pos3_clicked() {
 }
 
 void screen_tictactoe_gameView::pos4_clicked() {
-	if( board[1][0] != 0 ) {
+	if( board[1][0] == 0 ) {
 		if( turn ) {
 			board[1][0] = 'X';
 			pos4_cross.setVisible(true);
@@ -135,7 +135,7 @@ void screen_tictactoe_gameView::pos4_clicked() {
 }
 
 void screen_tictactoe_gameView::pos5_clicked() {
-	if( board[1][1] != 0 ) {
+	if( board[1][1] == 0 ) {
 		if( turn ) {
 			board[1][1] = 'X';
 			pos5_cross.setVisible(true);
@@ -161,7 +161,7 @@ void screen_tictactoe_gameView::pos5_clicked() {
 }
 
 void screen_tictactoe_gameView::pos6_clicked() {
-	if( board[1][2] != 0 ) {
+	if( board[1][2] == 0 ) {
 		if( turn ) {
 			board[1][2] = 'X';
 			pos6_cross.setVisible(true);
@@ -187,7 +187,7 @@ void screen_tictactoe_gameView::pos6_clicked() {
 }
 
 void screen_tictactoe_gameView::pos7_clicked() {
-	if( board[2][0] != 0 ) {
+	if( board[2][0] == 0 ) {
 		if( turn ) {
 			board[2][0] = 'X';
 			pos7_cross.setVisible(true);
@@ -213,7 +213,7 @@ void screen_tictactoe_gameView::pos7_clicked() {
 }
 
 void screen_tictactoe_gameView::pos8_clicked() {
-	if( board[2][1] != 0 ) {
+	if( board[2][1] == 0 ) {
 		if( turn ) {
 			board[2][1] = 'X';
 			pos8_cross.setVisible(true);
@@ -239,7 +239,7 @@ void screen_tictactoe_gameView::pos8_clicked() {
 }
 
 void screen_tictactoe_gameView::pos9_clicked() {
-	if( board[2][2] != 0 ) {
+	if( board[2][2] == 0 ) {
 		if( turn ) {
 			board[2][2] = 'X';
 			pos9_cross.setVisible(true);
@@ -266,7 +266,11 @@ void screen_tictactoe_gameView::pos9_clicked() {
 
 void screen_tictactoe_gameView::handleTickEvent() {
 	if( game_over ) {
-
+		touchgfx::Box error_square = Box();
+		error_square.setPosition(0, 0, 480, 272);
+		error_square.setColor(touchgfx::Color::getColorFromRGB(0, 255, 0));
+		add(error_square);
+		error_square.getParent()->invalidate();
 	}
 }
 

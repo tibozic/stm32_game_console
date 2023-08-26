@@ -68,6 +68,7 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     btn_pos4.setBorderSize(5);
     btn_pos4.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_pos4.setAlpha(0);
+    btn_pos4.setAction(flexButtonCallback);
     btn_pos4.setPosition(56, 88, 100, 97);
     add(btn_pos4);
 
@@ -75,6 +76,7 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     btn_pos6.setBorderSize(5);
     btn_pos6.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_pos6.setAlpha(0);
+    btn_pos6.setAction(flexButtonCallback);
     btn_pos6.setPosition(302, 88, 112, 97);
     add(btn_pos6);
 
@@ -82,6 +84,7 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     btn_pos5.setBorderSize(5);
     btn_pos5.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_pos5.setAlpha(0);
+    btn_pos5.setAction(flexButtonCallback);
     btn_pos5.setPosition(167, 88, 124, 97);
     add(btn_pos5);
 
@@ -89,6 +92,7 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     btn_pos7.setBorderSize(5);
     btn_pos7.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_pos7.setAlpha(0);
+    btn_pos7.setAction(flexButtonCallback);
     btn_pos7.setPosition(56, 194, 100, 71);
     add(btn_pos7);
 
@@ -96,6 +100,7 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     btn_pos2.setBorderSize(5);
     btn_pos2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_pos2.setAlpha(0);
+    btn_pos2.setAction(flexButtonCallback);
     btn_pos2.setPosition(167, 7, 124, 71);
     add(btn_pos2);
 
@@ -103,6 +108,7 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     btn_pos8.setBorderSize(5);
     btn_pos8.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_pos8.setAlpha(0);
+    btn_pos8.setAction(flexButtonCallback);
     btn_pos8.setPosition(167, 194, 124, 71);
     add(btn_pos8);
 
@@ -110,6 +116,7 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     btn_pos3.setBorderSize(5);
     btn_pos3.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_pos3.setAlpha(0);
+    btn_pos3.setAction(flexButtonCallback);
     btn_pos3.setPosition(302, 7, 113, 71);
     add(btn_pos3);
 
@@ -117,6 +124,7 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     btn_pos9.setBorderSize(5);
     btn_pos9.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_pos9.setAlpha(0);
+    btn_pos9.setAction(flexButtonCallback);
     btn_pos9.setPosition(302, 194, 113, 71);
     add(btn_pos9);
 
@@ -247,5 +255,61 @@ void screen_tictactoe_gameViewBase::flexButtonCallbackHandler(const touchgfx::Ab
         //When btn_pos1 clicked call virtual function
         //Call pos1_clicked
         pos1_clicked();
+    }
+    if (&src == &btn_pos2)
+    {
+        //intr_pos2
+        //When btn_pos2 clicked call virtual function
+        //Call pos2_clicked
+        pos2_clicked();
+    }
+    if (&src == &btn_pos3)
+    {
+        //intr_pos3
+        //When btn_pos3 clicked call virtual function
+        //Call pos3_clicked
+        pos3_clicked();
+    }
+    if (&src == &btn_pos4)
+    {
+        //intr_pos4
+        //When btn_pos4 clicked call virtual function
+        //Call pos4_clicked
+        pos4_clicked();
+    }
+    if (&src == &btn_pos5)
+    {
+        //intr_pos5
+        //When btn_pos5 clicked call virtual function
+        //Call pos5_clicked
+        pos5_clicked();
+    }
+    if (&src == &btn_pos6)
+    {
+        //intr_pos6
+        //When btn_pos6 clicked call virtual function
+        //Call pos6_clicked
+        pos6_clicked();
+    }
+    if (&src == &btn_pos7)
+    {
+        //intr_pos7
+        //When btn_pos7 clicked call virtual function
+        //Call pos7_clicked
+        pos7_clicked();
+    }
+    if (&src == &btn_pos8)
+    {
+        //intr_pos8
+        //When btn_pos8 clicked call virtual function
+        //Call pos8_clicked
+        pos8_clicked();
+    }
+    if (&src == &btn_pos9)
+    {
+        //intr_pos9
+        //When btn_pos9 clicked call virtual function
+        //Call pos9_clicked
+        pos9_clicked();
     }
 }
