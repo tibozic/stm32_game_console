@@ -12,6 +12,9 @@
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithIcon.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class screen_tictactoe_gameViewBase : public touchgfx::View<screen_tictactoe_gamePresenter>
 {
@@ -105,6 +108,16 @@ protected:
     touchgfx::ScalableImage pos8_cross;
     touchgfx::ScalableImage pos9_circle;
     touchgfx::ScalableImage pos9_cross;
+    touchgfx::Box box_background;
+    touchgfx::TextArea lbl_game_over;
+    touchgfx::ButtonWithIcon btn_back;
+    touchgfx::TextAreaWithOneWildcard lbl_result;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t LBL_RESULT_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lbl_resultBuffer[LBL_RESULT_SIZE];
 
 private:
 
@@ -118,11 +131,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<screen_tictactoe_gameViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+    touchgfx::Callback<screen_tictactoe_gameViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

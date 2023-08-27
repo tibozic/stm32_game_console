@@ -5,9 +5,11 @@
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
-    flexButtonCallback(this, &screen_tictactoe_gameViewBase::flexButtonCallbackHandler)
+    flexButtonCallback(this, &screen_tictactoe_gameViewBase::flexButtonCallbackHandler),
+    buttonCallback(this, &screen_tictactoe_gameViewBase::buttonCallbackHandler)
 {
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
     
@@ -235,6 +237,34 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     pos9_cross.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     pos9_cross.setVisible(false);
     add(pos9_cross);
+
+    box_background.setPosition(106, 63, 272, 152);
+    box_background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    box_background.setVisible(false);
+    add(box_background);
+
+    lbl_game_over.setXY(118, 85);
+    lbl_game_over.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    lbl_game_over.setLinespacing(0);
+    lbl_game_over.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FP7G));
+    lbl_game_over.setVisible(false);
+    add(lbl_game_over);
+
+    btn_back.setXY(12, 12);
+    btn_back.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_BACKSPACE_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_BACKSPACE_50_50_E8F6FB_SVG_ID));
+    btn_back.setIconXY(-7, -7);
+    btn_back.setVisible(false);
+    btn_back.setAction(buttonCallback);
+    add(btn_back);
+
+    lbl_result.setPosition(100, 142, 258, 24);
+    lbl_result.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    lbl_result.setLinespacing(0);
+    Unicode::snprintf(lbl_resultBuffer, LBL_RESULT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_LKZS).getText());
+    lbl_result.setWildcard(lbl_resultBuffer);
+    lbl_result.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DOP9));
+    lbl_result.setVisible(false);
+    add(lbl_result);
 }
 
 screen_tictactoe_gameViewBase::~screen_tictactoe_gameViewBase()
@@ -311,5 +341,16 @@ void screen_tictactoe_gameViewBase::flexButtonCallbackHandler(const touchgfx::Ab
         //When btn_pos9 clicked call virtual function
         //Call pos9_clicked
         pos9_clicked();
+    }
+}
+
+void screen_tictactoe_gameViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &btn_back)
+    {
+        //intr_back
+        //When btn_back clicked change screen to screen_main_menu
+        //Go to screen_main_menu with no screen transition
+        application().gotoscreen_main_menuScreenNoTransition();
     }
 }

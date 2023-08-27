@@ -23,7 +23,7 @@ public:
     virtual void pos8_clicked();
     virtual void pos9_clicked();
 
-    virtual short is_game_over(int y, int x);
+    virtual short is_game_over(int x, int y);
 
     virtual void handleTickEvent();
 protected:

@@ -80,6 +80,9 @@ Application/User/gui/screen_tictactoe_gameView.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp
 ../../TouchGFX/gui/include/gui/screen_tictactoe_game_screen/screen_tictactoe_gameView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.hpp:
@@ -161,4 +164,7 @@ Application/User/gui/screen_tictactoe_gameView.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:

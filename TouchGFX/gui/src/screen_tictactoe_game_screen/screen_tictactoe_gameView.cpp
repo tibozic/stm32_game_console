@@ -16,8 +16,22 @@ screen_tictactoe_gameView::screen_tictactoe_gameView()
 		}
 	}
 
-	turn = 1;
+	game_over = false;
+	lbl_game_over.setVisible(false);
+	lbl_game_over.invalidate();
 
+	box_background.setVisible(false);
+	box_background.invalidate();
+
+	lbl_result.setVisible(false);
+	lbl_result.invalidate();
+
+	btn_back.setVisible(false);
+	btn_back.invalidate();
+
+	turn_number = 0;
+
+	turn = true;
 }
 
 void screen_tictactoe_gameView::setupScreen()
@@ -31,7 +45,7 @@ void screen_tictactoe_gameView::tearDownScreen()
 }
 
 void screen_tictactoe_gameView::pos1_clicked() {
-	if( board[0][0] == 0 ) {
+	if( !game_over && board[0][0] == 0 ) {
 		if( turn ) {
 			board[0][0] = 'X';
 			pos1_cross.setVisible(true);
@@ -57,7 +71,7 @@ void screen_tictactoe_gameView::pos1_clicked() {
 }
 
 void screen_tictactoe_gameView::pos2_clicked() {
-	if( board[0][1] == 0 ) {
+	if( !game_over && board[0][1] == 0 ) {
 		if( turn ) {
 			board[0][1] = 'X';
 			pos2_cross.setVisible(true);
@@ -83,7 +97,7 @@ void screen_tictactoe_gameView::pos2_clicked() {
 }
 
 void screen_tictactoe_gameView::pos3_clicked() {
-	if( board[0][2] == 0 ) {
+	if( !game_over && board[0][2] == 0 ) {
 		if( turn ) {
 			board[0][2] = 'X';
 			pos3_cross.setVisible(true);
@@ -109,7 +123,7 @@ void screen_tictactoe_gameView::pos3_clicked() {
 }
 
 void screen_tictactoe_gameView::pos4_clicked() {
-	if( board[1][0] == 0 ) {
+	if( !game_over && board[1][0] == 0 ) {
 		if( turn ) {
 			board[1][0] = 'X';
 			pos4_cross.setVisible(true);
@@ -135,7 +149,7 @@ void screen_tictactoe_gameView::pos4_clicked() {
 }
 
 void screen_tictactoe_gameView::pos5_clicked() {
-	if( board[1][1] == 0 ) {
+	if( !game_over && board[1][1] == 0 ) {
 		if( turn ) {
 			board[1][1] = 'X';
 			pos5_cross.setVisible(true);
@@ -161,7 +175,7 @@ void screen_tictactoe_gameView::pos5_clicked() {
 }
 
 void screen_tictactoe_gameView::pos6_clicked() {
-	if( board[1][2] == 0 ) {
+	if( !game_over && board[1][2] == 0 ) {
 		if( turn ) {
 			board[1][2] = 'X';
 			pos6_cross.setVisible(true);
@@ -187,7 +201,7 @@ void screen_tictactoe_gameView::pos6_clicked() {
 }
 
 void screen_tictactoe_gameView::pos7_clicked() {
-	if( board[2][0] == 0 ) {
+	if( !game_over && board[2][0] == 0 ) {
 		if( turn ) {
 			board[2][0] = 'X';
 			pos7_cross.setVisible(true);
@@ -213,7 +227,7 @@ void screen_tictactoe_gameView::pos7_clicked() {
 }
 
 void screen_tictactoe_gameView::pos8_clicked() {
-	if( board[2][1] == 0 ) {
+	if( !game_over && board[2][1] == 0 ) {
 		if( turn ) {
 			board[2][1] = 'X';
 			pos8_cross.setVisible(true);
@@ -239,7 +253,7 @@ void screen_tictactoe_gameView::pos8_clicked() {
 }
 
 void screen_tictactoe_gameView::pos9_clicked() {
-	if( board[2][2] == 0 ) {
+	if( !game_over && board[2][2] == 0 ) {
 		if( turn ) {
 			board[2][2] = 'X';
 			pos9_cross.setVisible(true);
@@ -266,15 +280,29 @@ void screen_tictactoe_gameView::pos9_clicked() {
 
 void screen_tictactoe_gameView::handleTickEvent() {
 	if( game_over ) {
-		touchgfx::Box error_square = Box();
-		error_square.setPosition(0, 0, 480, 272);
-		error_square.setColor(touchgfx::Color::getColorFromRGB(0, 255, 0));
-		add(error_square);
-		error_square.getParent()->invalidate();
+		btn_back.setVisible(true);
+		btn_back.invalidate();
+
+		box_background.setVisible(true);
+		box_background.invalidate();
+
+		lbl_game_over.setVisible(true);
+		lbl_game_over.invalidate();
+
+		lbl_result.setVisible(true);
+
+		if( result == 1 )
+			Unicode::snprintf(lbl_resultBuffer, LBL_RESULT_SIZE, "Player 1 wins");
+		else if( result == 2 )
+			Unicode::snprintf(lbl_resultBuffer, LBL_RESULT_SIZE, "Player 2 wins");
+		else if( result == 3 )
+			Unicode::snprintf(lbl_resultBuffer, LBL_RESULT_SIZE, "Tie");
+
+		lbl_result.invalidate();
 	}
 }
 
-short screen_tictactoe_gameView::is_game_over(int y, int x) {
+short screen_tictactoe_gameView::is_game_over(int x, int y) {
 	// 0 -> game isn't over
 	// 1 -> player 1 wins
 	// 2 -> player 2 wins

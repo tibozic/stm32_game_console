@@ -974,6 +974,69 @@
             "Visible": false,
             "Filename": "cross.png",
             "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Box",
+            "Name": "box_background",
+            "X": 106,
+            "Y": 63,
+            "Width": 272,
+            "Height": 152,
+            "Visible": false
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lbl_game_over",
+            "X": 118,
+            "Y": 85,
+            "Width": 244,
+            "Height": 41,
+            "Visible": false,
+            "TextId": "__SingleUse_FP7G",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "btn_back",
+            "X": 12,
+            "Y": 12,
+            "Width": 36,
+            "Height": 36,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lbl_result",
+            "X": 100,
+            "Y": 142,
+            "Width": 258,
+            "Height": 24,
+            "Visible": false,
+            "TextId": "__SingleUse_DOP9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_LKZS",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
           }
         ],
         "Interactions": [
@@ -1074,6 +1137,18 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "pos9_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_back",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_back"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "screen_main_menu"
             }
           }
         ]

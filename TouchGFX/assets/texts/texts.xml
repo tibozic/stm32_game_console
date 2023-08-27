@@ -6,6 +6,15 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_LKZS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Player 1 Wins</Translation>
+      </Text>
+      <Text Id="__SingleUse_DOP9" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_FP7G" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Game Over!</Translation>
+      </Text>
       <Text Id="__SingleUse_3IVP" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Tic Tac Toe</Translation>
       </Text>
