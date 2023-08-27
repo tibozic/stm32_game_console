@@ -265,6 +265,16 @@ screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase() :
     lbl_result.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DOP9));
     lbl_result.setVisible(false);
     add(lbl_result);
+
+    lbl_turn.setXY(337, 0);
+    lbl_turn.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    lbl_turn.setLinespacing(0);
+    Unicode::snprintf(lbl_turnBuffer, LBL_TURN_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_29C0).getText());
+    lbl_turn.setWildcard(lbl_turnBuffer);
+    lbl_turn.resizeToCurrentText();
+    lbl_turn.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3N5W));
+    lbl_turn.setAlpha(95);
+    add(lbl_turn);
 }
 
 screen_tictactoe_gameViewBase::~screen_tictactoe_gameViewBase()

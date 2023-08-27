@@ -5,50 +5,95 @@
         "Name": "screen_main_menu",
         "Components": [
           {
-            "Type": "ButtonWithLabel",
-            "Name": "snake_game",
-            "X": 38,
-            "Y": 51,
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
             "Width": 240,
-            "Height": 50,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
-            "TextId": "__SingleUse_6WU6",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
-            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+            "Height": 272,
+            "Filename": "snake_logo.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
           },
           {
-            "Type": "ButtonWithLabel",
-            "Name": "btn_tictactoe",
-            "X": 38,
-            "Y": 167,
+            "Type": "ScalableImage",
+            "Name": "scalableImage2",
+            "X": 240,
             "Width": 240,
-            "Height": 50,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
-            "TextId": "__SingleUse_3IVP",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+            "Height": 272,
+            "Filename": "tictactoe_logo.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "btn_tictactoe",
+            "X": 240,
+            "Y": 1,
+            "Width": 240,
+            "Height": 271,
+            "Alpha": 1,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
             },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 240,
+                "Height": 271,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "btn_snake",
+            "Width": 240,
+            "Height": 272,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
             },
-            "TextRotation": "0",
-            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 240,
+                "Height": 272,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -56,7 +101,7 @@
             "InteractionName": "intr_snake_game",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "snake_game"
+              "TriggerComponent": "btn_snake"
             },
             "Action": {
               "Type": "ActionGotoScreen",
@@ -73,7 +118,8 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "screen_tictactoe_game"
             }
           }
@@ -1036,6 +1082,27 @@
               "TextId": "__SingleUse_LKZS",
               "UseBuffer": true,
               "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lbl_turn",
+            "X": 337,
+            "Width": 143,
+            "Height": 24,
+            "TextId": "__SingleUse_3N5W",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 95,
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_29C0",
+              "UseBuffer": true,
+              "BufferSize": 10
             }
           }
         ],

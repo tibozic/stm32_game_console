@@ -8,7 +8,8 @@
 #include <mvp/View.hpp>
 #include <gui/screen_main_menu_screen/screen_main_menuPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/containers/buttons/Buttons.hpp>
 
 class screen_main_menuViewBase : public touchgfx::View<screen_main_menuPresenter>
 {
@@ -26,20 +27,22 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::ButtonWithLabel snake_game;
-    touchgfx::ButtonWithLabel btn_tictactoe;
+    touchgfx::ScalableImage scalableImage1;
+    touchgfx::ScalableImage scalableImage2;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  btn_tictactoe;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  btn_snake;
 
 private:
 
     /*
      * Callback Declarations
      */
-    touchgfx::Callback<screen_main_menuViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<screen_main_menuViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
-    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 

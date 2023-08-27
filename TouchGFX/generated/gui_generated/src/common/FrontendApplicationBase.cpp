@@ -62,13 +62,13 @@ void FrontendApplicationBase::gotoscreen_snake_gameScreenWipeTransitionEastImpl(
 
 // screen_tictactoe_game
 
-void FrontendApplicationBase::gotoscreen_tictactoe_gameScreenNoTransition()
+void FrontendApplicationBase::gotoscreen_tictactoe_gameScreenSlideTransitionEast()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoscreen_tictactoe_gameScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoscreen_tictactoe_gameScreenSlideTransitionEastImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoscreen_tictactoe_gameScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoscreen_tictactoe_gameScreenSlideTransitionEastImpl()
 {
-    touchgfx::makeTransition<screen_tictactoe_gameView, screen_tictactoe_gamePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<screen_tictactoe_gameView, screen_tictactoe_gamePresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

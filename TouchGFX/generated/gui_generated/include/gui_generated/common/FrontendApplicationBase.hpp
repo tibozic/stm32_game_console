@@ -27,7 +27,7 @@ public:
     void gotoscreen_snake_gameScreenWipeTransitionEast();
 
     // screen_tictactoe_game
-    void gotoscreen_tictactoe_gameScreenNoTransition();
+    void gotoscreen_tictactoe_gameScreenSlideTransitionEast();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -41,7 +41,7 @@ protected:
     void gotoscreen_snake_gameScreenWipeTransitionEastImpl();
 
     // screen_tictactoe_game
-    void gotoscreen_tictactoe_gameScreenNoTransitionImpl();
+    void gotoscreen_tictactoe_gameScreenSlideTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

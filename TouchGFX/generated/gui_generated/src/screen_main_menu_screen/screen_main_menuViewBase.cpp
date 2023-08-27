@@ -4,30 +4,39 @@
 #include <gui_generated/screen_main_menu_screen/screen_main_menuViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 
 screen_main_menuViewBase::screen_main_menuViewBase() :
-    buttonCallback(this, &screen_main_menuViewBase::buttonCallbackHandler)
+    flexButtonCallback(this, &screen_main_menuViewBase::flexButtonCallbackHandler)
 {
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    snake_game.setXY(38, 51);
-    snake_game.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    snake_game.setLabelText(touchgfx::TypedText(T___SINGLEUSE_6WU6));
-    snake_game.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    snake_game.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    snake_game.setAction(buttonCallback);
-    add(snake_game);
+    scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_SNAKE_LOGO_ID));
+    scalableImage1.setPosition(0, 0, 240, 272);
+    scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(scalableImage1);
 
-    btn_tictactoe.setXY(38, 167);
-    btn_tictactoe.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    btn_tictactoe.setLabelText(touchgfx::TypedText(T___SINGLEUSE_3IVP));
-    btn_tictactoe.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    btn_tictactoe.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    btn_tictactoe.setAction(buttonCallback);
+    scalableImage2.setBitmap(touchgfx::Bitmap(BITMAP_TICTACTOE_LOGO_ID));
+    scalableImage2.setPosition(240, 0, 240, 272);
+    scalableImage2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(scalableImage2);
+
+    btn_tictactoe.setBoxWithBorderPosition(0, 0, 240, 271);
+    btn_tictactoe.setBorderSize(5);
+    btn_tictactoe.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    btn_tictactoe.setAlpha(1);
+    btn_tictactoe.setAction(flexButtonCallback);
+    btn_tictactoe.setPosition(240, 1, 240, 271);
     add(btn_tictactoe);
+
+    btn_snake.setBoxWithBorderPosition(0, 0, 240, 272);
+    btn_snake.setBorderSize(5);
+    btn_snake.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    btn_snake.setAlpha(0);
+    btn_snake.setAction(flexButtonCallback);
+    btn_snake.setPosition(0, 0, 240, 272);
+    add(btn_snake);
 }
 
 screen_main_menuViewBase::~screen_main_menuViewBase()
@@ -40,12 +49,12 @@ void screen_main_menuViewBase::setupScreen()
 
 }
 
-void screen_main_menuViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+void screen_main_menuViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
 {
-    if (&src == &snake_game)
+    if (&src == &btn_snake)
     {
         //intr_snake_game
-        //When snake_game clicked change screen to screen_snake_game
+        //When btn_snake clicked change screen to screen_snake_game
         //Go to screen_snake_game with screen transition towards East
         application().gotoscreen_snake_gameScreenWipeTransitionEast();
     }
@@ -53,7 +62,7 @@ void screen_main_menuViewBase::buttonCallbackHandler(const touchgfx::AbstractBut
     {
         //intr_tictactoe_game
         //When btn_tictactoe clicked change screen to screen_tictactoe_game
-        //Go to screen_tictactoe_game with no screen transition
-        application().gotoscreen_tictactoe_gameScreenNoTransition();
+        //Go to screen_tictactoe_game with screen transition towards East
+        application().gotoscreen_tictactoe_gameScreenSlideTransitionEast();
     }
 }

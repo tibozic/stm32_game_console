@@ -112,12 +112,15 @@ protected:
     touchgfx::TextArea lbl_game_over;
     touchgfx::ButtonWithIcon btn_back;
     touchgfx::TextAreaWithOneWildcard lbl_result;
+    touchgfx::TextAreaWithOneWildcard lbl_turn;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t LBL_RESULT_SIZE = 20;
     touchgfx::Unicode::UnicodeChar lbl_resultBuffer[LBL_RESULT_SIZE];
+    static const uint16_t LBL_TURN_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar lbl_turnBuffer[LBL_TURN_SIZE];
 
 private:
 

@@ -49,6 +49,8 @@
 "./Application/User/generated/image_icon_theme_images_hardware_keyboard_arrow_right_50_50_E8F6FB.svg.o"
 "./Application/User/generated/image_icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.o"
 "./Application/User/generated/image_icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.o"
+"./Application/User/generated/image_snake_logo.o"
+"./Application/User/generated/image_tictactoe_logo.o"
 "./Application/User/generated/screen_main_menuViewBase.o"
 "./Application/User/generated/screen_snake_gameViewBase.o"
 "./Application/User/generated/screen_tictactoe_gameViewBase.o"

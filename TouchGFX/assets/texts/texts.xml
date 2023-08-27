@@ -6,6 +6,12 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_29C0" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_3N5W" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Turn: Player &lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_LKZS" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Player 1 Wins</Translation>
       </Text>
@@ -14,9 +20,6 @@
       </Text>
       <Text Id="__SingleUse_FP7G" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">Game Over!</Translation>
-      </Text>
-      <Text Id="__SingleUse_3IVP" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Tic Tac Toe</Translation>
       </Text>
       <Text Id="__SingleUse_6BFI" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">Game Over!</Translation>
@@ -32,9 +35,6 @@
       </Text>
       <Text Id="__SingleUse_DGGX" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Start</Translation>
-      </Text>
-      <Text Id="__SingleUse_6WU6" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Snake</Translation>
       </Text>
     </TextGroup>
   </Texts>

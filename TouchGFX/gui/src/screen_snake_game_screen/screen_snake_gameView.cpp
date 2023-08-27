@@ -92,7 +92,6 @@ void screen_snake_gameView::handleTickEvent() {
 			{
 				if( snake_part->pixel->getX() == head->pixel->getX() && snake_part->pixel->getY() == head->pixel->getY() ) {
 					game_started = false;
-					tick = 0;
 					break;
 				}
 

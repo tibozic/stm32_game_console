@@ -300,6 +300,14 @@ void screen_tictactoe_gameView::handleTickEvent() {
 
 		lbl_result.invalidate();
 	}
+	else {
+		if( turn )
+			Unicode::snprintf(lbl_turnBuffer, LBL_TURN_SIZE, "1");
+		else
+			Unicode::snprintf(lbl_turnBuffer, LBL_TURN_SIZE, "2");
+
+		lbl_turn.invalidate();
+	}
 }
 
 short screen_tictactoe_gameView::is_game_over(int x, int y) {
