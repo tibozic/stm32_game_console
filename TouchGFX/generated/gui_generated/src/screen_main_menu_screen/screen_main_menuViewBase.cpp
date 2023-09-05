@@ -13,30 +13,43 @@ screen_main_menuViewBase::screen_main_menuViewBase() :
     add(__background);
 
     scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_SNAKE_LOGO_ID));
-    scalableImage1.setPosition(0, 0, 240, 272);
+    scalableImage1.setPosition(160, 1, 160, 271);
     scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(scalableImage1);
 
     scalableImage2.setBitmap(touchgfx::Bitmap(BITMAP_TICTACTOE_LOGO_ID));
-    scalableImage2.setPosition(240, 0, 240, 272);
+    scalableImage2.setPosition(320, 0, 154, 272);
     scalableImage2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(scalableImage2);
 
-    btn_tictactoe.setBoxWithBorderPosition(0, 0, 240, 271);
+    btn_tictactoe.setBoxWithBorderPosition(0, 0, 154, 271);
     btn_tictactoe.setBorderSize(5);
     btn_tictactoe.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_tictactoe.setAlpha(1);
     btn_tictactoe.setAction(flexButtonCallback);
-    btn_tictactoe.setPosition(240, 1, 240, 271);
+    btn_tictactoe.setPosition(320, 1, 154, 271);
     add(btn_tictactoe);
 
-    btn_snake.setBoxWithBorderPosition(0, 0, 240, 272);
+    btn_snake.setBoxWithBorderPosition(0, 0, 160, 271);
     btn_snake.setBorderSize(5);
     btn_snake.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     btn_snake.setAlpha(0);
     btn_snake.setAction(flexButtonCallback);
-    btn_snake.setPosition(0, 0, 240, 272);
+    btn_snake.setPosition(160, 1, 160, 271);
     add(btn_snake);
+
+    btn_space_invaders.setBoxWithBorderPosition(0, 0, 160, 272);
+    btn_space_invaders.setBorderSize(5);
+    btn_space_invaders.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    btn_space_invaders.setAlpha(0);
+    btn_space_invaders.setAction(flexButtonCallback);
+    btn_space_invaders.setPosition(0, 0, 160, 272);
+    add(btn_space_invaders);
+
+    scalableImage3.setBitmap(touchgfx::Bitmap(BITMAP_SPACE_INVADERS_ID));
+    scalableImage3.setPosition(0, 0, 160, 272);
+    scalableImage3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(scalableImage3);
 }
 
 screen_main_menuViewBase::~screen_main_menuViewBase()
@@ -64,5 +77,12 @@ void screen_main_menuViewBase::flexButtonCallbackHandler(const touchgfx::Abstrac
         //When btn_tictactoe clicked change screen to screen_tictactoe_game
         //Go to screen_tictactoe_game with screen transition towards East
         application().gotoscreen_tictactoe_gameScreenSlideTransitionEast();
+    }
+    if (&src == &btn_space_invaders)
+    {
+        //intr_space_invaders_game
+        //When btn_space_invaders clicked change screen to screen_space_invaders
+        //Go to screen_space_invaders with screen transition towards East
+        application().gotoscreen_space_invadersScreenSlideTransitionEast();
     }
 }

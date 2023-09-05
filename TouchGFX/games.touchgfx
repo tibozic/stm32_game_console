@@ -7,16 +7,18 @@
           {
             "Type": "ScalableImage",
             "Name": "scalableImage1",
-            "Width": 240,
-            "Height": 272,
+            "X": 160,
+            "Y": 1,
+            "Width": 160,
+            "Height": 271,
             "Filename": "snake_logo.png",
             "ScalingAlgorithm": "Nearest-neighbor"
           },
           {
             "Type": "ScalableImage",
             "Name": "scalableImage2",
-            "X": 240,
-            "Width": 240,
+            "X": 296,
+            "Width": 178,
             "Height": 272,
             "Filename": "tictactoe_logo.png",
             "ScalingAlgorithm": "Nearest-neighbor"
@@ -24,9 +26,9 @@
           {
             "Type": "FlexButton",
             "Name": "btn_tictactoe",
-            "X": 240,
+            "X": 320,
             "Y": 1,
-            "Width": 240,
+            "Width": 154,
             "Height": 271,
             "Alpha": 1,
             "ButtonTrigger": {
@@ -35,7 +37,7 @@
             "ButtonStyles": [
               {
                 "Type": "BoxWithBorderButtonStyle",
-                "Width": 240,
+                "Width": 154,
                 "Height": 271,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 5,
@@ -62,7 +64,45 @@
           {
             "Type": "FlexButton",
             "Name": "btn_snake",
-            "Width": 240,
+            "X": 160,
+            "Y": 1,
+            "Width": 160,
+            "Height": 271,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 160,
+                "Height": 271,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "btn_space_invaders",
+            "Width": 160,
             "Height": 272,
             "Alpha": 0,
             "ButtonTrigger": {
@@ -71,7 +111,7 @@
             "ButtonStyles": [
               {
                 "Type": "BoxWithBorderButtonStyle",
-                "Width": 240,
+                "Width": 160,
                 "Height": 272,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 5,
@@ -94,6 +134,14 @@
                 }
               }
             ]
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage3",
+            "Width": 160,
+            "Height": 272,
+            "Filename": "space_invaders.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
           }
         ],
         "Interactions": [
@@ -106,8 +154,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionWipe",
-              "ScreenTransitionDirection": "East",
-              "ActionComponent": "screen_snake_game"
+              "ScreenTransitionDirection": "East"
             }
           },
           {
@@ -122,273 +169,18 @@
               "ScreenTransitionDirection": "East",
               "ActionComponent": "screen_tictactoe_game"
             }
-          }
-        ]
-      },
-      {
-        "Name": "screen_snake_game",
-        "Components": [
-          {
-            "Type": "ScalableImage",
-            "Name": "scalableImage1",
-            "Width": 480,
-            "Height": 272,
-            "Filename": "black_bg.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
           },
           {
-            "Type": "Box",
-            "Name": "snake_head",
-            "X": 150,
-            "Y": 150,
-            "Width": 10,
-            "Height": 10,
-            "Color": {
-              "Red": 30,
-              "Green": 255
-            }
-          },
-          {
-            "Type": "ButtonWithLabel",
-            "Name": "btn_snake_start",
-            "X": 120,
-            "Y": 111,
-            "Width": 240,
-            "Height": 50,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
-            "TextId": "__SingleUse_DGGX",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
-            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
-          },
-          {
-            "Type": "Box",
-            "Name": "food",
-            "X": 20,
-            "Y": 30,
-            "Width": 10,
-            "Height": 10,
-            "Color": {
-              "Red": 255
-            }
-          },
-          {
-            "Type": "ButtonWithIcon",
-            "Name": "btn_up",
-            "X": 398,
-            "Y": 149,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Alpha": 90,
-            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
-            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
-            "IconX": -7,
-            "IconY": -7,
-            "IconHeight": 50,
-            "IconWidth": 50,
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "ButtonWithIcon",
-            "Name": "btn_right",
-            "X": 434,
-            "Y": 185,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Alpha": 90,
-            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_right_50_50_E8F6FB.svg.png",
-            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_right_50_50_E8F6FB.svg.png",
-            "IconX": -7,
-            "IconY": -7,
-            "IconHeight": 50,
-            "IconWidth": 50,
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "ButtonWithIcon",
-            "Name": "btn_down",
-            "X": 398,
-            "Y": 221,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Alpha": 90,
-            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
-            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
-            "IconX": -7,
-            "IconY": -7,
-            "IconHeight": 50,
-            "IconWidth": 50,
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "ButtonWithIcon",
-            "Name": "btn_left",
-            "X": 362,
-            "Y": 185,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "Alpha": 90,
-            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_left_50_50_E8F6FB.svg.png",
-            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_left_50_50_E8F6FB.svg.png",
-            "IconX": -7,
-            "IconY": -7,
-            "IconHeight": 50,
-            "IconWidth": 50,
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "ButtonWithIcon",
-            "Name": "btn_back",
-            "X": 12,
-            "Y": 12,
-            "Width": 36,
-            "Height": 36,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
-            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.png",
-            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.png",
-            "IconX": -7,
-            "IconY": -7,
-            "IconHeight": 50,
-            "IconWidth": 50,
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "lbl_score",
-            "X": 360,
-            "Width": 66,
-            "Height": 24,
-            "TextId": "__SingleUse_Y8W6",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 90,
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "lbl_score_val",
-            "X": 434,
-            "Width": 46,
-            "Height": 24,
-            "TextId": "__SingleUse_G1O3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 90,
-            "Wildcard1": {
-              "TextId": "__SingleUse_8AZ9",
-              "UseBuffer": true,
-              "BufferSize": 32
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "lbl_game_over",
-            "X": 118,
-            "Y": 112,
-            "Width": 244,
-            "Height": 49,
-            "Visible": false,
-            "TextId": "__SingleUse_6BFI",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255
-            },
-            "AutoSize": true
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "intr_change_direction_up",
+            "InteractionName": "intr_space_invaders_game",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "btn_up"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "change_direction_up"
-            }
-          },
-          {
-            "InteractionName": "intr_change_direction_left",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "btn_left"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "change_direction_left"
-            }
-          },
-          {
-            "InteractionName": "intr_change_direction_right",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "btn_right"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "change_direction_right"
-            }
-          },
-          {
-            "InteractionName": "intr_change_direction_down",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "btn_down"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "change_direction_down"
-            }
-          },
-          {
-            "InteractionName": "intr_game_snake_start",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "btn_snake_start"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "game_snake_start"
-            }
-          },
-          {
-            "InteractionName": "btn_back",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "btn_back"
+              "TriggerComponent": "btn_space_invaders"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen_main_menu"
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "screen_space_invaders"
             }
           }
         ]
@@ -1036,7 +828,7 @@
             "X": 118,
             "Y": 85,
             "Width": 244,
-            "Height": 41,
+            "Height": 49,
             "Visible": false,
             "TextId": "__SingleUse_FP7G",
             "TextRotation": "0",
@@ -1204,6 +996,203 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "pos9_clicked"
+            }
+          },
+          {
+            "InteractionName": "intr_back",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_back"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "screen_main_menu"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "screen_space_invaders",
+        "CanvasBufferSize": 7200,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "background_black",
+            "Width": 480,
+            "Height": 272,
+            "Filename": "black_bg.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "btn_left",
+            "X": 340,
+            "Y": 198,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
+            "Alpha": 90,
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_left_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_left_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "btn_right",
+            "X": 424,
+            "Y": 198,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
+            "Alpha": 90,
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_right_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_right_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "btn_fire",
+            "X": 382,
+            "Y": 156,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
+            "Alpha": 90,
+            "IconPressed": "__generated\\icon_theme_images_maps_local_fire_department_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_maps_local_fire_department_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "enemy1",
+            "Width": 50,
+            "Height": 52,
+            "Filename": "space_invaders_enemy.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "ship",
+            "X": 8,
+            "Y": 204,
+            "Width": 84,
+            "Height": 60,
+            "Filename": "space_invaders_ship.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Line",
+            "Name": "bullet",
+            "X": 45,
+            "Y": 168,
+            "Width": 10,
+            "Height": 36,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 5.0,
+            "StartY": 5.0,
+            "EndX": 5.0,
+            "EndY": 30.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "btn_back",
+            "X": 12,
+            "Y": 12,
+            "Width": 36,
+            "Height": 36,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_fill_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lbl_game_over",
+            "X": 118,
+            "Y": 85,
+            "Width": 244,
+            "Height": 41,
+            "Visible": false,
+            "TextId": "__SingleUse_BG0R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lbl_win",
+            "X": 194,
+            "Y": 136,
+            "Width": 95,
+            "Height": 24,
+            "Visible": false,
+            "TextId": "__SingleUse_I2AS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 5,
+              "Green": 255,
+              "Blue": 22
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "lbl_lose",
+            "X": 194,
+            "Y": 136,
+            "Width": 92,
+            "Height": 24,
+            "Visible": false,
+            "TextId": "__SingleUse_2AHD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 5,
+              "Blue": 5
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "intr_fire_bullet",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btn_fire"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "fire_bullet"
             }
           },
           {

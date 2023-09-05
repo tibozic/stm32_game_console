@@ -63,15 +63,20 @@ protected:
     touchgfx::ButtonWithIcon btn_down;
     touchgfx::ButtonWithIcon btn_left;
     touchgfx::ButtonWithIcon btn_back;
+    touchgfx::ButtonWithIcon btn_restart;
     touchgfx::TextArea lbl_score;
     touchgfx::TextAreaWithOneWildcard lbl_score_val;
     touchgfx::TextArea lbl_game_over;
+    touchgfx::TextAreaWithOneWildcard lbl_high_score;
+    touchgfx::TextArea lbl_new_high_score;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t LBL_SCORE_VAL_SIZE = 32;
     touchgfx::Unicode::UnicodeChar lbl_score_valBuffer[LBL_SCORE_VAL_SIZE];
+    static const uint16_t LBL_HIGH_SCORE_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lbl_high_scoreBuffer[LBL_HIGH_SCORE_SIZE];
 
 private:
 

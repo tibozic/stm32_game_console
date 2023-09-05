@@ -31,6 +31,8 @@ protected:
     touchgfx::ScalableImage scalableImage2;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  btn_tictactoe;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  btn_snake;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  btn_space_invaders;
+    touchgfx::ScalableImage scalableImage3;
 
 private:
 

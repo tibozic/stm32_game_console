@@ -13,8 +13,8 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:42:1:screen_main_menuViewBase::~screen_main_menuViewBase()	1
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:47:6:virtual void screen_main_menuViewBase::setupScreen()	1
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:55:1:screen_main_menuViewBase::~screen_main_menuViewBase()	1
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:60:6:virtual void screen_main_menuViewBase::setupScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:123:18:void touchgfx::BoxWithBorderButtonStyle<T>::handlePressedUpdated() [with T = touchgfx::ClickButtonTrigger]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<screen_main_menuViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:41:7:touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger>::~BoxWithBorderButtonStyle()	1
@@ -23,8 +23,8 @@ C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:131:18:void touchgfx::BoxWithBorderButtonStyle<T>::handleAlphaUpdated() [with T = touchgfx::ClickButtonTrigger]	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:41:7:virtual touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger>::~BoxWithBorderButtonStyle()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<screen_main_menuViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	1
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:42:1:virtual screen_main_menuViewBase::~screen_main_menuViewBase()	1
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:52:6:void screen_main_menuViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	3
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:55:1:virtual screen_main_menuViewBase::~screen_main_menuViewBase()	1
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:65:6:void screen_main_menuViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	4
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	10
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp:47:18:virtual void touchgfx::ClickButtonTrigger::handleClickEvent(const touchgfx::ClickEvent&)	14
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:8:1:screen_main_menuViewBase::screen_main_menuViewBase()	5
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_main_menu_screen/screen_main_menuViewBase.cpp:8:1:screen_main_menuViewBase::screen_main_menuViewBase()	7

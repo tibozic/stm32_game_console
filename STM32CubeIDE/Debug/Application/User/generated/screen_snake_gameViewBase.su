@@ -31,8 +31,8 @@
 ../../TouchGFX/generated/gui_generated/include/gui_generated/screen_snake_game_screen/screen_snake_gameViewBase.hpp:35:18:virtual void screen_snake_gameViewBase::change_direction_right()	0	static
 ../../TouchGFX/generated/gui_generated/include/gui_generated/screen_snake_game_screen/screen_snake_gameViewBase.hpp:39:18:virtual void screen_snake_gameViewBase::change_direction_down()	0	static
 ../../TouchGFX/generated/gui_generated/include/gui_generated/screen_snake_game_screen/screen_snake_gameViewBase.hpp:43:18:virtual void screen_snake_gameViewBase::game_snake_start()	0	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:95:1:screen_snake_gameViewBase::~screen_snake_gameViewBase()	0	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:100:6:virtual void screen_snake_gameViewBase::setupScreen()	0	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:117:1:screen_snake_gameViewBase::~screen_snake_gameViewBase()	0	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:122:6:virtual void screen_snake_gameViewBase::setupScreen()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<screen_snake_gameViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:62:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = screen_snake_gameViewBase; T1 = const touchgfx::AbstractButton&]	4	static
@@ -40,8 +40,8 @@ C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:62:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<screen_snake_gameViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:95:1:virtual screen_snake_gameViewBase::~screen_snake_gameViewBase()	8	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:117:1:virtual screen_snake_gameViewBase::~screen_snake_gameViewBase()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	16	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:105:6:void screen_snake_gameViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:127:6:void screen_snake_gameViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:127:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int16_t)	24	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:9:1:screen_snake_gameViewBase::screen_snake_gameViewBase()	128	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp:9:1:screen_snake_gameViewBase::screen_snake_gameViewBase()	136	static

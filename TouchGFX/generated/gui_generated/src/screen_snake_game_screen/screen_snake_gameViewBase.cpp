@@ -68,6 +68,12 @@ screen_snake_gameViewBase::screen_snake_gameViewBase() :
     btn_back.setAction(buttonCallback);
     add(btn_back);
 
+    btn_restart.setXY(54, 12);
+    btn_restart.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_FIBER_NEW_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_FIBER_NEW_50_50_E8F6FB_SVG_ID));
+    btn_restart.setIconXY(-7, -7);
+    btn_restart.setAction(buttonCallback);
+    add(btn_restart);
+
     lbl_score.setXY(360, 0);
     lbl_score.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     lbl_score.setLinespacing(0);
@@ -90,6 +96,22 @@ screen_snake_gameViewBase::screen_snake_gameViewBase() :
     lbl_game_over.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6BFI));
     lbl_game_over.setVisible(false);
     add(lbl_game_over);
+
+    lbl_high_score.setPosition(178, 155, 125, 24);
+    lbl_high_score.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    lbl_high_score.setLinespacing(0);
+    lbl_high_scoreBuffer[0] = 0;
+    lbl_high_score.setWildcard(lbl_high_scoreBuffer);
+    lbl_high_score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IFF2));
+    lbl_high_score.setVisible(false);
+    add(lbl_high_score);
+
+    lbl_new_high_score.setXY(160, 179);
+    lbl_new_high_score.setColor(touchgfx::Color::getColorFromRGB(81, 255, 0));
+    lbl_new_high_score.setLinespacing(0);
+    lbl_new_high_score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C5TM));
+    lbl_new_high_score.setVisible(false);
+    add(lbl_new_high_score);
 }
 
 screen_snake_gameViewBase::~screen_snake_gameViewBase()
@@ -145,5 +167,12 @@ void screen_snake_gameViewBase::buttonCallbackHandler(const touchgfx::AbstractBu
         //When btn_back clicked change screen to screen_main_menu
         //Go to screen_main_menu with no screen transition
         application().gotoscreen_main_menuScreenNoTransition();
+    }
+    if (&src == &btn_restart)
+    {
+        //intr_restart
+        //When btn_restart clicked call virtual function
+        //Call game_snake_start
+        game_snake_start();
     }
 }

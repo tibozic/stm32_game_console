@@ -208,6 +208,18 @@
     <Filter Include="Header Files\generated\gui_generated\screen_tictactoe_game_screen">
       <UniqueIdentifier>0256D706-FCD3-376F-C604-11C6FF1761A1</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\screen_space_invaders_screen">
+      <UniqueIdentifier>E7F02CCE-68D0-C644-CEB3-C78D02DEE276</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screen_space_invaders_screen">
+      <UniqueIdentifier>A0A3A52C-1235-1704-AD91-62ADD0DFFD9C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screen_space_invaders_screen">
+      <UniqueIdentifier>8B6BB7AB-D550-CF2D-13DA-F8589F7E012F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screen_space_invaders_screen">
+      <UniqueIdentifier>12ECCE7E-1729-6B1D-E892-2185E6111399</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -266,6 +278,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_tictactoe_game_screen\screen_tictactoe_gameViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen_tictactoe_game_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_space_invaders_screen\screen_space_invadersPresenter.cpp">
+      <Filter>Source Files\gui\screen_space_invaders_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_space_invaders_screen\screen_space_invadersView.cpp">
+      <Filter>Source Files\gui\screen_space_invaders_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_space_invaders_screen\screen_space_invadersViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screen_space_invaders_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -735,6 +756,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_tictactoe_game_screen\screen_tictactoe_gameViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen_tictactoe_game_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_space_invaders_screen\screen_space_invadersPresenter.hpp">
+      <Filter>Header Files\gui\screen_space_invaders_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_space_invaders_screen\screen_space_invadersView.hpp">
+      <Filter>Header Files\gui\screen_space_invaders_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_space_invaders_screen\screen_space_invadersViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screen_space_invaders_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

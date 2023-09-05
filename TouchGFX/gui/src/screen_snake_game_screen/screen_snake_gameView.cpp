@@ -9,6 +9,9 @@ snake_piece *tail = NULL;
 
 touchgfx::Box snake_pixels[MAX_SNAKE_PIECES];
 
+static int high_score = 0;
+bool new_high_score = false;
+
 screen_snake_gameView::screen_snake_gameView()
 {
 
@@ -30,6 +33,9 @@ void screen_snake_gameView::game_snake_start()
 	btn_snake_start.setVisible(false);
 	btn_snake_start.invalidate();
 
+	btn_restart.setVisible(false);
+	btn_restart.invalidate();
+
 	btn_back.setVisible(false);
 	btn_back.invalidate();
 
@@ -38,6 +44,12 @@ void screen_snake_gameView::game_snake_start()
 
 	lbl_game_over.setVisible(false);
 	lbl_game_over.invalidate();
+
+	lbl_new_high_score.setVisible(false);
+	lbl_new_high_score.invalidate();
+
+	lbl_high_score.setVisible(false);
+	lbl_high_score.invalidate();
 
 	snake_pixels[0] = Box();
 
@@ -65,7 +77,7 @@ void screen_snake_gameView::game_snake_start()
 
 	snake_direction = SNAKE_DOWN;
 
-	snake_length = 1;
+	new_high_score = false;
 
 	game_started = true;
 
@@ -108,12 +120,10 @@ void screen_snake_gameView::handleTickEvent() {
 					snake_length++;
 
 					if( snake_length == MAX_SNAKE_PIECES-1 ) {
-						// TODO: You win
 						game_started = false;
 					}
 
 					// extend the snake
-
 					snake_piece *new_piece = (snake_piece*)malloc(sizeof(snake_piece));
 
 					if( new_piece == NULL ) {
@@ -138,8 +148,8 @@ void screen_snake_gameView::handleTickEvent() {
 					tail = new_piece;
 
 					// generate new food
-					int food_new_x = pseudo_random(tick) % 480;
-					int food_new_y = pseudo_random2(tick) % 272;
+					int food_new_x = pseudo_random(tick) % SCREEN_WIDTH;
+					int food_new_y = pseudo_random2(tick) % SCREEN_HEIGHT;
 
 					food_new_x = food_new_x - (food_new_x % 10);
 					food_new_y = food_new_y - (food_new_y % 10);
@@ -254,7 +264,26 @@ void screen_snake_gameView::handleTickEvent() {
 			}
 		}
 
+		if( tick > 0 ) {
+			tick = 0;
+			lbl_game_over.setVisible(true);
+			lbl_game_over.invalidate();
 
+			if( snake_length > high_score ) {
+				high_score = snake_length;
+				new_high_score = true;
+
+				lbl_new_high_score.setVisible(true);
+				lbl_new_high_score.invalidate();
+
+			}
+
+			Unicode::snprintf(lbl_high_scoreBuffer, LBL_HIGH_SCORE_SIZE, "%d", high_score);
+			lbl_high_score.resizeToCurrentText();
+
+			lbl_high_score.setVisible(true);
+			lbl_high_score.invalidate();
+		}
 
 		if( head != NULL ) {
 			tail = head;
@@ -264,34 +293,11 @@ void screen_snake_gameView::handleTickEvent() {
 			snake_length = 1;
 		}
 
-
-		/*
-		snake_piece *temp = head->next;
-		while( temp != NULL ) {
-
-			temp->pixel->setXY(-1, -1);
-			temp->pixel->getParent()->invalidate();
-
-			temp = temp->next;
-			free(temp->prev);
-			temp->prev = NULL;
-		}
-
-		tail = head;
-		head->next = NULL;
-		head->pixel->setXY(20, 50);
-		head->pixel->getParent()->invalidate();
-		snake_length = 1;
-		*/
-
 		btn_back.setVisible(true);
 		btn_back.invalidate();
 
-		if( tick > 0 ) {
-			tick = 0;
-			lbl_game_over.setVisible(true);
-			lbl_game_over.invalidate();
-		}
+		btn_restart.setVisible(true);
+		btn_restart.invalidate();
 	}
 }
 

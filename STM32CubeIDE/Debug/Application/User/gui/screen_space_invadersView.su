@@ -1,0 +1,15 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:65:6:virtual void screen_space_invadersView::tearDownScreen()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:206:6:virtual void screen_space_invadersView::check_game_over()	20	static
+../../TouchGFX/gui/include/gui/screen_space_invaders_screen/screen_space_invadersView.hpp:31:13:screen_space_invadersView::~screen_space_invadersView()	8	static
+../../TouchGFX/gui/include/gui/screen_space_invaders_screen/screen_space_invadersView.hpp:31:13:virtual screen_space_invadersView::~screen_space_invadersView()	8	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:248:1:cpp)	24	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:248:1:cpp)	16	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:70:6:virtual void screen_space_invadersView::handleTickEvent()	32	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:161:6:virtual void screen_space_invadersView::fire_bullet()	0	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:171:6:virtual void screen_space_invadersView::check_bullet_hitbox()	16	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:9:1:screen_space_invadersView::screen_space_invadersView()	56	static
+C:/TouchGFXProjects/games/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp:60:6:virtual void screen_space_invadersView::setupScreen()	0	static

@@ -29,6 +29,9 @@ public:
     // screen_tictactoe_game
     void gotoscreen_tictactoe_gameScreenSlideTransitionEast();
 
+    // screen_space_invaders
+    void gotoscreen_space_invadersScreenSlideTransitionEast();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -42,6 +45,9 @@ protected:
 
     // screen_tictactoe_game
     void gotoscreen_tictactoe_gameScreenSlideTransitionEastImpl();
+
+    // screen_space_invaders
+    void gotoscreen_space_invadersScreenSlideTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

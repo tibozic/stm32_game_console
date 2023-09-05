@@ -142,8 +142,11 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
- ../../TouchGFX/generated/images/include/BitmapDatabase.hpp \
+ ../../TouchGFX/gui/include/gui/screen_space_invaders_screen/screen_space_invadersView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/screen_space_invaders_screen/screen_space_invadersViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/screen_space_invaders_screen/screen_space_invadersPresenter.hpp \
  ../../TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
+ ../../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../../TouchGFX/target/generated/STM32DMA.hpp \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
@@ -302,8 +305,11 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
-../../TouchGFX/generated/images/include/BitmapDatabase.hpp:
+../../TouchGFX/gui/include/gui/screen_space_invaders_screen/screen_space_invadersView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen_space_invaders_screen/screen_space_invadersViewBase.hpp:
+../../TouchGFX/gui/include/gui/screen_space_invaders_screen/screen_space_invadersPresenter.hpp:
 ../../TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
+../../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 ../../TouchGFX/target/generated/STM32DMA.hpp:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:

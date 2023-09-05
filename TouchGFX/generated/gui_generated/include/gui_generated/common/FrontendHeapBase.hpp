@@ -21,6 +21,8 @@
 #include <gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp>
 #include <gui/screen_tictactoe_game_screen/screen_tictactoe_gameView.hpp>
 #include <gui/screen_tictactoe_game_screen/screen_tictactoe_gamePresenter.hpp>
+#include <gui/screen_space_invaders_screen/screen_space_invadersView.hpp>
+#include <gui/screen_space_invaders_screen/screen_space_invadersPresenter.hpp>
 
 
 /**
@@ -46,7 +48,8 @@ public:
     typedef touchgfx::meta::TypeList< screen_main_menuView,
             touchgfx::meta::TypeList< screen_snake_gameView,
             touchgfx::meta::TypeList< screen_tictactoe_gameView,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< screen_space_invadersView,
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -61,7 +64,8 @@ public:
     typedef touchgfx::meta::TypeList< screen_main_menuPresenter,
             touchgfx::meta::TypeList< screen_snake_gamePresenter,
             touchgfx::meta::TypeList< screen_tictactoe_gamePresenter,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< screen_space_invadersPresenter,
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**

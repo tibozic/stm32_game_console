@@ -15,6 +15,8 @@
 #include <gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp>
 #include <gui/screen_tictactoe_game_screen/screen_tictactoe_gameView.hpp>
 #include <gui/screen_tictactoe_game_screen/screen_tictactoe_gamePresenter.hpp>
+#include <gui/screen_space_invaders_screen/screen_space_invadersView.hpp>
+#include <gui/screen_space_invaders_screen/screen_space_invadersPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -71,4 +73,17 @@ void FrontendApplicationBase::gotoscreen_tictactoe_gameScreenSlideTransitionEast
 void FrontendApplicationBase::gotoscreen_tictactoe_gameScreenSlideTransitionEastImpl()
 {
     touchgfx::makeTransition<screen_tictactoe_gameView, screen_tictactoe_gamePresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// screen_space_invaders
+
+void FrontendApplicationBase::gotoscreen_space_invadersScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoscreen_space_invadersScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoscreen_space_invadersScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<screen_space_invadersView, screen_space_invadersPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

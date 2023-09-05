@@ -301,6 +301,15 @@ void screen_tictactoe_gameView::handleTickEvent() {
 		lbl_result.invalidate();
 	}
 	else {
+		if( turn_number == 0 ) {
+			btn_back.setVisible(true);
+			btn_back.invalidate();
+		}
+		else {
+			btn_back.setVisible(false);
+			btn_back.invalidate();
+		}
+
 		if( turn )
 			Unicode::snprintf(lbl_turnBuffer, LBL_TURN_SIZE, "1");
 		else

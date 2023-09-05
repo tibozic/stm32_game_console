@@ -625,6 +625,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screen_snake_game_screen/screen_snake_gameView.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/screen_space_invadersPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/screen_space_invadersView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screen_space_invaders_screen/screen_space_invadersView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/screen_tictactoe_gamePresenter.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screen_tictactoe_game_screen/screen_tictactoe_gamePresenter.cpp</locationURI>
@@ -720,6 +730,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screen_snake_game_screen/screen_snake_gameViewBase.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/screen_space_invadersViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/screen_tictactoe_gameViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp</locationURI>
@@ -755,6 +770,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_icon_theme_images_av_fiber_new_50_50_E8F6FB.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_av_fiber_new_50_50_E8F6FB.svg.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.cpp</locationURI>
@@ -780,6 +800,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_icon_theme_images_maps_local_fire_department_50_50_E8F6FB.svg.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_icon_theme_images_maps_local_fire_department_50_50_E8F6FB.svg.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_black_bg.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_black_bg.cpp</locationURI>
@@ -798,6 +823,21 @@
 			<name>Application/User/generated/image_snake_logo.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_snake_logo.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_space_invaders.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_space_invaders.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_space_invaders_enemy.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_space_invaders_enemy.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_space_invaders_ship.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_space_invaders_ship.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_tictactoe_logo.cpp</name>
