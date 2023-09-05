@@ -11,12 +11,12 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/screen_main_menu_screen/screen_main_menuView.hpp>
 #include <gui/screen_main_menu_screen/screen_main_menuPresenter.hpp>
-#include <gui/screen_snake_game_screen/screen_snake_gameView.hpp>
-#include <gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp>
 #include <gui/screen_tictactoe_game_screen/screen_tictactoe_gameView.hpp>
 #include <gui/screen_tictactoe_game_screen/screen_tictactoe_gamePresenter.hpp>
 #include <gui/screen_space_invaders_screen/screen_space_invadersView.hpp>
 #include <gui/screen_space_invaders_screen/screen_space_invadersPresenter.hpp>
+#include <gui/screen_snake_game_screen/screen_snake_gameView.hpp>
+#include <gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp>
 
 using namespace touchgfx;
 
@@ -49,19 +49,6 @@ void FrontendApplicationBase::gotoscreen_main_menuScreenNoTransitionImpl()
     touchgfx::makeTransition<screen_main_menuView, screen_main_menuPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// screen_snake_game
-
-void FrontendApplicationBase::gotoscreen_snake_gameScreenWipeTransitionEast()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoscreen_snake_gameScreenWipeTransitionEastImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoscreen_snake_gameScreenWipeTransitionEastImpl()
-{
-    touchgfx::makeTransition<screen_snake_gameView, screen_snake_gamePresenter, touchgfx::WipeTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
 // screen_tictactoe_game
 
 void FrontendApplicationBase::gotoscreen_tictactoe_gameScreenSlideTransitionEast()
@@ -86,4 +73,17 @@ void FrontendApplicationBase::gotoscreen_space_invadersScreenSlideTransitionEast
 void FrontendApplicationBase::gotoscreen_space_invadersScreenSlideTransitionEastImpl()
 {
     touchgfx::makeTransition<screen_space_invadersView, screen_space_invadersPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// screen_snake_game
+
+void FrontendApplicationBase::gotoscreen_snake_gameScreenWipeTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoscreen_snake_gameScreenWipeTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoscreen_snake_gameScreenWipeTransitionEastImpl()
+{
+    touchgfx::makeTransition<screen_snake_gameView, screen_snake_gamePresenter, touchgfx::WipeTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

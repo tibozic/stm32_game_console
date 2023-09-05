@@ -18,100 +18,92 @@ screen_snake_gameViewBase::screen_snake_gameViewBase() :
     scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(scalableImage1);
 
-    snake_head.setPosition(150, 150, 10, 10);
-    snake_head.setColor(touchgfx::Color::getColorFromRGB(30, 255, 0));
-    add(snake_head);
-
-    btn_snake_start.setXY(120, 111);
-    btn_snake_start.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    btn_snake_start.setLabelText(touchgfx::TypedText(T___SINGLEUSE_DGGX));
-    btn_snake_start.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    btn_snake_start.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    btn_snake_start.setAction(buttonCallback);
-    add(btn_snake_start);
-
-    food.setPosition(20, 30, 10, 10);
-    food.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-    add(food);
-
-    btn_up.setXY(398, 149);
-    btn_up.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_UP_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_UP_50_50_E8F6FB_SVG_ID));
-    btn_up.setIconXY(-7, -7);
-    btn_up.setAlpha(90);
-    btn_up.setAction(buttonCallback);
-    add(btn_up);
-
-    btn_right.setXY(434, 185);
-    btn_right.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_RIGHT_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_RIGHT_50_50_E8F6FB_SVG_ID));
-    btn_right.setIconXY(-7, -7);
-    btn_right.setAlpha(90);
-    btn_right.setAction(buttonCallback);
-    add(btn_right);
-
-    btn_down.setXY(398, 221);
-    btn_down.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_DOWN_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_DOWN_50_50_E8F6FB_SVG_ID));
-    btn_down.setIconXY(-7, -7);
-    btn_down.setAlpha(90);
-    btn_down.setAction(buttonCallback);
-    add(btn_down);
-
-    btn_left.setXY(362, 185);
+    btn_left.setXY(362, 172);
     btn_left.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_LEFT_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_LEFT_50_50_E8F6FB_SVG_ID));
     btn_left.setIconXY(-7, -7);
     btn_left.setAlpha(90);
     btn_left.setAction(buttonCallback);
     add(btn_left);
 
-    btn_back.setXY(12, 12);
-    btn_back.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_BACKSPACE_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_BACKSPACE_50_50_E8F6FB_SVG_ID));
-    btn_back.setIconXY(-7, -7);
-    btn_back.setAction(buttonCallback);
-    add(btn_back);
+    btn_up.setXY(397, 137);
+    btn_up.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_UP_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_UP_50_50_E8F6FB_SVG_ID));
+    btn_up.setIconXY(-7, -7);
+    btn_up.setAlpha(90);
+    btn_up.setAction(buttonCallback);
+    add(btn_up);
 
-    btn_restart.setXY(54, 12);
-    btn_restart.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_FIBER_NEW_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_AV_FIBER_NEW_50_50_E8F6FB_SVG_ID));
-    btn_restart.setIconXY(-7, -7);
-    btn_restart.setAction(buttonCallback);
-    add(btn_restart);
+    btn_down.setXY(398, 208);
+    btn_down.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_DOWN_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_DOWN_50_50_E8F6FB_SVG_ID));
+    btn_down.setIconXY(-7, -7);
+    btn_down.setAlpha(90);
+    btn_down.setAction(buttonCallback);
+    add(btn_down);
 
-    lbl_score.setXY(360, 0);
-    lbl_score.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    lbl_score.setLinespacing(0);
-    lbl_score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_Y8W6));
-    lbl_score.setAlpha(90);
-    add(lbl_score);
+    btn_right.setXY(432, 172);
+    btn_right.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_RIGHT_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_RIGHT_50_50_E8F6FB_SVG_ID));
+    btn_right.setIconXY(-7, -7);
+    btn_right.setAlpha(90);
+    btn_right.setAction(buttonCallback);
+    add(btn_right);
 
-    lbl_score_val.setPosition(434, 0, 46, 24);
-    lbl_score_val.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    lbl_score_val.setLinespacing(0);
-    Unicode::snprintf(lbl_score_valBuffer, LBL_SCORE_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_8AZ9).getText());
-    lbl_score_val.setWildcard(lbl_score_valBuffer);
-    lbl_score_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_G1O3));
-    lbl_score_val.setAlpha(90);
-    add(lbl_score_val);
+    food.setPosition(20, 30, 10, 10);
+    food.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    add(food);
 
-    lbl_game_over.setXY(118, 112);
+    btn_snake_start.setXY(120, 111);
+    btn_snake_start.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
+    btn_snake_start.setLabelText(touchgfx::TypedText(T___SINGLEUSE_8RFQ));
+    btn_snake_start.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btn_snake_start.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btn_snake_start.setAction(buttonCallback);
+    add(btn_snake_start);
+
+    lbl_game_over.setXY(118, 85);
     lbl_game_over.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
     lbl_game_over.setLinespacing(0);
-    lbl_game_over.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6BFI));
+    lbl_game_over.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HGL4));
     lbl_game_over.setVisible(false);
     add(lbl_game_over);
 
-    lbl_high_score.setPosition(178, 155, 125, 24);
+    lbl_high_score.setXY(178, 126);
     lbl_high_score.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     lbl_high_score.setLinespacing(0);
     lbl_high_scoreBuffer[0] = 0;
     lbl_high_score.setWildcard(lbl_high_scoreBuffer);
-    lbl_high_score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IFF2));
+    lbl_high_score.resizeToCurrentText();
+    lbl_high_score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A6NY));
     lbl_high_score.setVisible(false);
     add(lbl_high_score);
 
-    lbl_new_high_score.setXY(160, 179);
-    lbl_new_high_score.setColor(touchgfx::Color::getColorFromRGB(81, 255, 0));
+    lbl_new_high_score.setXY(157, 150);
+    lbl_new_high_score.setColor(touchgfx::Color::getColorFromRGB(0, 255, 17));
     lbl_new_high_score.setLinespacing(0);
-    lbl_new_high_score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C5TM));
+    lbl_new_high_score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_H3L2));
     lbl_new_high_score.setVisible(false);
     add(lbl_new_high_score);
+
+    btn_back.setXY(12, 12);
+    btn_back.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_BACKSPACE_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_BACKSPACE_50_50_E8F6FB_SVG_ID));
+    btn_back.setIconXY(-7, -7);
+    btn_back.setVisible(false);
+    btn_back.setAction(buttonCallback);
+    add(btn_back);
+
+    lbl_score.setXY(360, 0);
+    lbl_score.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    lbl_score.setLinespacing(0);
+    lbl_score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PCGM));
+    lbl_score.setAlpha(95);
+    add(lbl_score);
+
+    lbl_score_val.setPosition(426, 0, 54, 24);
+    lbl_score_val.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    lbl_score_val.setLinespacing(0);
+    Unicode::snprintf(lbl_score_valBuffer, LBL_SCORE_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_LFN7).getText());
+    lbl_score_val.setWildcard(lbl_score_valBuffer);
+    lbl_score_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OPI7));
+    lbl_score_val.setAlpha(95);
+    add(lbl_score_val);
 }
 
 screen_snake_gameViewBase::~screen_snake_gameViewBase()
@@ -126,34 +118,6 @@ void screen_snake_gameViewBase::setupScreen()
 
 void screen_snake_gameViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &btn_up)
-    {
-        //intr_change_direction_up
-        //When btn_up clicked call virtual function
-        //Call change_direction_up
-        change_direction_up();
-    }
-    if (&src == &btn_left)
-    {
-        //intr_change_direction_left
-        //When btn_left clicked call virtual function
-        //Call change_direction_left
-        change_direction_left();
-    }
-    if (&src == &btn_right)
-    {
-        //intr_change_direction_right
-        //When btn_right clicked call virtual function
-        //Call change_direction_right
-        change_direction_right();
-    }
-    if (&src == &btn_down)
-    {
-        //intr_change_direction_down
-        //When btn_down clicked call virtual function
-        //Call change_direction_down
-        change_direction_down();
-    }
     if (&src == &btn_snake_start)
     {
         //intr_game_snake_start
@@ -163,16 +127,37 @@ void screen_snake_gameViewBase::buttonCallbackHandler(const touchgfx::AbstractBu
     }
     if (&src == &btn_back)
     {
-        //btn_back
+        //intr_back
         //When btn_back clicked change screen to screen_main_menu
         //Go to screen_main_menu with no screen transition
         application().gotoscreen_main_menuScreenNoTransition();
     }
-    if (&src == &btn_restart)
+    if (&src == &btn_up)
     {
-        //intr_restart
-        //When btn_restart clicked call virtual function
-        //Call game_snake_start
-        game_snake_start();
+        //intr_btn_up
+        //When btn_up clicked call virtual function
+        //Call change_direction_up
+        change_direction_up();
+    }
+    if (&src == &btn_left)
+    {
+        //intr_btn_left
+        //When btn_left clicked call virtual function
+        //Call change_direction_left
+        change_direction_left();
+    }
+    if (&src == &btn_down)
+    {
+        //intr_btn_down
+        //When btn_down clicked call virtual function
+        //Call change_direction_down
+        change_direction_down();
+    }
+    if (&src == &btn_right)
+    {
+        //intr_btn_right
+        //When btn_right clicked call virtual function
+        //Call change_direction_right
+        change_direction_right();
     }
 }

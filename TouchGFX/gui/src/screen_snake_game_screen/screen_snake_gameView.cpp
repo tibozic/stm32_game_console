@@ -33,14 +33,8 @@ void screen_snake_gameView::game_snake_start()
 	btn_snake_start.setVisible(false);
 	btn_snake_start.invalidate();
 
-	btn_restart.setVisible(false);
-	btn_restart.invalidate();
-
 	btn_back.setVisible(false);
 	btn_back.invalidate();
-
-	snake_head.setVisible(false);
-	snake_head.invalidate();
 
 	lbl_game_over.setVisible(false);
 	lbl_game_over.invalidate();
@@ -295,9 +289,6 @@ void screen_snake_gameView::handleTickEvent() {
 
 		btn_back.setVisible(true);
 		btn_back.invalidate();
-
-		btn_restart.setVisible(true);
-		btn_restart.invalidate();
 	}
 }
 

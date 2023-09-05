@@ -17,12 +17,12 @@
 
 #include <gui/screen_main_menu_screen/screen_main_menuView.hpp>
 #include <gui/screen_main_menu_screen/screen_main_menuPresenter.hpp>
-#include <gui/screen_snake_game_screen/screen_snake_gameView.hpp>
-#include <gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp>
 #include <gui/screen_tictactoe_game_screen/screen_tictactoe_gameView.hpp>
 #include <gui/screen_tictactoe_game_screen/screen_tictactoe_gamePresenter.hpp>
 #include <gui/screen_space_invaders_screen/screen_space_invadersView.hpp>
 #include <gui/screen_space_invaders_screen/screen_space_invadersPresenter.hpp>
+#include <gui/screen_snake_game_screen/screen_snake_gameView.hpp>
+#include <gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp>
 
 
 /**
@@ -46,9 +46,9 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< screen_main_menuView,
-            touchgfx::meta::TypeList< screen_snake_gameView,
             touchgfx::meta::TypeList< screen_tictactoe_gameView,
             touchgfx::meta::TypeList< screen_space_invadersView,
+            touchgfx::meta::TypeList< screen_snake_gameView,
             touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
@@ -62,9 +62,9 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< screen_main_menuPresenter,
-            touchgfx::meta::TypeList< screen_snake_gamePresenter,
             touchgfx::meta::TypeList< screen_tictactoe_gamePresenter,
             touchgfx::meta::TypeList< screen_space_invadersPresenter,
+            touchgfx::meta::TypeList< screen_snake_gamePresenter,
             touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 

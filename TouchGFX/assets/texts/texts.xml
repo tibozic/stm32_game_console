@@ -6,6 +6,30 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_LFN7" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_OPI7" Alignment="Right" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_PCGM" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Score:</Translation>
+      </Text>
+      <Text Id="__SingleUse_H3L2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New High Score!</Translation>
+      </Text>
+      <Text Id="__SingleUse_A6NY" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">High Score: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_HGL4" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Game Over!</Translation>
+      </Text>
+      <Text Id="__SingleUse_4O0Y" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Game Over!</Translation>
+      </Text>
+      <Text Id="__SingleUse_8RFQ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Start</Translation>
+      </Text>
       <Text Id="__SingleUse_2AHD" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">You Lost!</Translation>
       </Text>

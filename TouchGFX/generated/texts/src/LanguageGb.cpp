@@ -10,8 +10,14 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    29,  // T___SINGLEUSE_C5TM: "New High Score!"
-    15,  // T___SINGLEUSE_IFF2: "High Score: <>"
+    102, // T___SINGLEUSE_LFN7: "1"
+    13,  // T___SINGLEUSE_OPI7: "<>"
+    89,  // T___SINGLEUSE_PCGM: "Score:"
+    29,  // T___SINGLEUSE_H3L2: "New High Score!"
+    15,  // T___SINGLEUSE_A6NY: "High Score: <>"
+    59,  // T___SINGLEUSE_HGL4: "Game Over!"
+    59,  // T___SINGLEUSE_4O0Y: "Game Over!"
+    96,  // T___SINGLEUSE_8RFQ: "Start"
     70,  // T___SINGLEUSE_2AHD: "You Lost!"
     80,  // T___SINGLEUSE_I2AS: "You Won!"
     59,  // T___SINGLEUSE_BG0R: "Game Over!"
@@ -19,10 +25,5 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     0,   // T___SINGLEUSE_3N5W: "Turn: Player <>"
     45,  // T___SINGLEUSE_LKZS: "Player 1 Wins"
     13,  // T___SINGLEUSE_DOP9: "<>"
-    59,  // T___SINGLEUSE_FP7G: "Game Over!"
-    59,  // T___SINGLEUSE_6BFI: "Game Over!"
-    102, // T___SINGLEUSE_8AZ9: "1"
-    13,  // T___SINGLEUSE_G1O3: "<>"
-    89,  // T___SINGLEUSE_Y8W6: "Score:"
-    96   // T___SINGLEUSE_DGGX: "Start"
+    59   // T___SINGLEUSE_FP7G: "Game Over!"
 };

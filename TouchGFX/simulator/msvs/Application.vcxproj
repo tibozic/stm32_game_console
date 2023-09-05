@@ -23,9 +23,7 @@
     <ClCompile Include="..\..\gui\src\screen_main_menu_screen\screen_main_menuPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen_main_menu_screen\screen_main_menuView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_main_menu_screen\screen_main_menuViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen_snake_game_screen\screen_snake_gamePresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen_snake_game_screen\screen_snake_gameView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen_snake_game_screen\screen_snake_gameViewBase.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
     <ClCompile Include="..\..\gui\src\screen_tictactoe_game_screen\screen_tictactoe_gamePresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen_tictactoe_game_screen\screen_tictactoe_gameView.cpp"/>
@@ -33,6 +31,8 @@
     <ClCompile Include="..\..\gui\src\screen_space_invaders_screen\screen_space_invadersPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen_space_invaders_screen\screen_space_invadersView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_space_invaders_screen\screen_space_invadersViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_snake_game_screen\screen_snake_gamePresenter.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_snake_game_screen\screen_snake_gameViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -184,9 +184,7 @@
     <ClInclude Include="..\..\gui\include\gui\screen_main_menu_screen\screen_main_menuPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen_main_menu_screen\screen_main_menuView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_main_menu_screen\screen_main_menuViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen_snake_game_screen\screen_snake_gamePresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen_snake_game_screen\screen_snake_gameView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_snake_game_screen\screen_snake_gameViewBase.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen_tictactoe_game_screen\screen_tictactoe_gamePresenter.hpp"/>
@@ -195,6 +193,8 @@
     <ClInclude Include="..\..\gui\include\gui\screen_space_invaders_screen\screen_space_invadersPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen_space_invaders_screen\screen_space_invadersView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_space_invaders_screen\screen_space_invadersViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_snake_game_screen\screen_snake_gamePresenter.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_snake_game_screen\screen_snake_gameViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

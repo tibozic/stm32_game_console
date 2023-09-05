@@ -73,6 +73,13 @@ screen_space_invadersViewBase::screen_space_invadersViewBase() :
     lbl_game_over.setVisible(false);
     add(lbl_game_over);
 
+    lbl_game_over_1.setXY(118, 85);
+    lbl_game_over_1.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    lbl_game_over_1.setLinespacing(0);
+    lbl_game_over_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4O0Y));
+    lbl_game_over_1.setVisible(false);
+    add(lbl_game_over_1);
+
     lbl_win.setXY(194, 136);
     lbl_win.setColor(touchgfx::Color::getColorFromRGB(5, 255, 22));
     lbl_win.setLinespacing(0);

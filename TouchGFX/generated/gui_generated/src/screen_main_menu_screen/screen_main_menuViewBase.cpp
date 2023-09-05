@@ -18,7 +18,7 @@ screen_main_menuViewBase::screen_main_menuViewBase() :
     add(scalableImage1);
 
     scalableImage2.setBitmap(touchgfx::Bitmap(BITMAP_TICTACTOE_LOGO_ID));
-    scalableImage2.setPosition(320, 0, 154, 272);
+    scalableImage2.setPosition(296, 0, 178, 272);
     scalableImage2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(scalableImage2);
 

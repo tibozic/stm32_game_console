@@ -9,8 +9,8 @@
 #include <gui/screen_snake_game_screen/screen_snake_gamePresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
@@ -24,6 +24,10 @@ public:
     /*
      * Virtual Action Handlers
      */
+    virtual void game_snake_start()
+    {
+        // Override and implement this function in screen_snake_game
+    }
     virtual void change_direction_up()
     {
         // Override and implement this function in screen_snake_game
@@ -32,15 +36,11 @@ public:
     {
         // Override and implement this function in screen_snake_game
     }
-    virtual void change_direction_right()
-    {
-        // Override and implement this function in screen_snake_game
-    }
     virtual void change_direction_down()
     {
         // Override and implement this function in screen_snake_game
     }
-    virtual void game_snake_start()
+    virtual void change_direction_right()
     {
         // Override and implement this function in screen_snake_game
     }
@@ -55,28 +55,26 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage scalableImage1;
-    touchgfx::Box snake_head;
-    touchgfx::ButtonWithLabel btn_snake_start;
-    touchgfx::Box food;
-    touchgfx::ButtonWithIcon btn_up;
-    touchgfx::ButtonWithIcon btn_right;
-    touchgfx::ButtonWithIcon btn_down;
     touchgfx::ButtonWithIcon btn_left;
-    touchgfx::ButtonWithIcon btn_back;
-    touchgfx::ButtonWithIcon btn_restart;
-    touchgfx::TextArea lbl_score;
-    touchgfx::TextAreaWithOneWildcard lbl_score_val;
+    touchgfx::ButtonWithIcon btn_up;
+    touchgfx::ButtonWithIcon btn_down;
+    touchgfx::ButtonWithIcon btn_right;
+    touchgfx::Box food;
+    touchgfx::ButtonWithLabel btn_snake_start;
     touchgfx::TextArea lbl_game_over;
     touchgfx::TextAreaWithOneWildcard lbl_high_score;
     touchgfx::TextArea lbl_new_high_score;
+    touchgfx::ButtonWithIcon btn_back;
+    touchgfx::TextArea lbl_score;
+    touchgfx::TextAreaWithOneWildcard lbl_score_val;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t LBL_SCORE_VAL_SIZE = 32;
-    touchgfx::Unicode::UnicodeChar lbl_score_valBuffer[LBL_SCORE_VAL_SIZE];
     static const uint16_t LBL_HIGH_SCORE_SIZE = 20;
     touchgfx::Unicode::UnicodeChar lbl_high_scoreBuffer[LBL_HIGH_SCORE_SIZE];
+    static const uint16_t LBL_SCORE_VAL_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lbl_score_valBuffer[LBL_SCORE_VAL_SIZE];
 
 private:
 

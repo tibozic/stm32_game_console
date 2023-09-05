@@ -64,4 +64,4 @@ C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:127:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int16_t)	24	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp:47:18:virtual void touchgfx::ClickButtonTrigger::handleClickEvent(const touchgfx::ClickEvent&)	16	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:10:1:screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase()	232	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_tictactoe_game_screen/screen_tictactoe_gameViewBase.cpp:10:1:screen_tictactoe_gameViewBase::screen_tictactoe_gameViewBase()	240	static

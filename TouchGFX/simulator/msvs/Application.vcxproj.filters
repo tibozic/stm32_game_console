@@ -175,9 +175,6 @@
     <Filter Include="Source Files\generated\gui_generated\common">
       <UniqueIdentifier>2ECADBB1-02B4-E0F3-E313-88D9C1DF10A1</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen_snake_game_screen">
-      <UniqueIdentifier>D3089615-956D-40B3-66DF-6B24732B39B0</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\generated\simulator\include">
       <UniqueIdentifier>258EDC2D-2B46-AB97-61A8-04EDE926EB8E</UniqueIdentifier>
     </Filter>
@@ -220,6 +217,9 @@
     <Filter Include="Source Files\generated\gui_generated\screen_space_invaders_screen">
       <UniqueIdentifier>12ECCE7E-1729-6B1D-E892-2185E6111399</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screen_snake_game_screen">
+      <UniqueIdentifier>DBA71723-DB75-5637-F893-D1BCA2DE6F8E</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -258,14 +258,8 @@
     <ClCompile Include="..\..\generated\gui_generated\src\screen_main_menu_screen\screen_main_menuViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen_main_menu_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen_snake_game_screen\screen_snake_gamePresenter.cpp">
-      <Filter>Source Files\gui\screen_snake_game_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\screen_snake_game_screen\screen_snake_gameView.cpp">
       <Filter>Source Files\gui\screen_snake_game_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen_snake_game_screen\screen_snake_gameViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen_snake_game_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
@@ -287,6 +281,12 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_space_invaders_screen\screen_space_invadersViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen_space_invaders_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_snake_game_screen\screen_snake_gamePresenter.cpp">
+      <Filter>Source Files\gui\screen_snake_game_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_snake_game_screen\screen_snake_gameViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screen_snake_game_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -733,14 +733,8 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_main_menu_screen\screen_main_menuViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen_main_menu_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen_snake_game_screen\screen_snake_gamePresenter.hpp">
-      <Filter>Header Files\gui\screen_snake_game_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\screen_snake_game_screen\screen_snake_gameView.hpp">
       <Filter>Header Files\gui\screen_snake_game_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_snake_game_screen\screen_snake_gameViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen_snake_game_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp">
       <Filter>Header Files\generated\gui_generated\common</Filter>
@@ -765,6 +759,12 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_space_invaders_screen\screen_space_invadersViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen_space_invaders_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_snake_game_screen\screen_snake_gamePresenter.hpp">
+      <Filter>Header Files\gui\screen_snake_game_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_snake_game_screen\screen_snake_gameViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screen_snake_game_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

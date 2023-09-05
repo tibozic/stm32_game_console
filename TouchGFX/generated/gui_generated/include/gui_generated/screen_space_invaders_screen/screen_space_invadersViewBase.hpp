@@ -48,6 +48,7 @@ protected:
     touchgfx::PainterRGB565 bulletPainter;
     touchgfx::ButtonWithIcon btn_back;
     touchgfx::TextArea lbl_game_over;
+    touchgfx::TextArea lbl_game_over_1;
     touchgfx::TextArea lbl_win;
     touchgfx::TextArea lbl_lose;
 

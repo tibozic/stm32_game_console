@@ -23,14 +23,14 @@ public:
     // screen_main_menu
     void gotoscreen_main_menuScreenNoTransition();
 
-    // screen_snake_game
-    void gotoscreen_snake_gameScreenWipeTransitionEast();
-
     // screen_tictactoe_game
     void gotoscreen_tictactoe_gameScreenSlideTransitionEast();
 
     // screen_space_invaders
     void gotoscreen_space_invadersScreenSlideTransitionEast();
+
+    // screen_snake_game
+    void gotoscreen_snake_gameScreenWipeTransitionEast();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -40,14 +40,14 @@ protected:
     // screen_main_menu
     void gotoscreen_main_menuScreenNoTransitionImpl();
 
-    // screen_snake_game
-    void gotoscreen_snake_gameScreenWipeTransitionEastImpl();
-
     // screen_tictactoe_game
     void gotoscreen_tictactoe_gameScreenSlideTransitionEastImpl();
 
     // screen_space_invaders
     void gotoscreen_space_invadersScreenSlideTransitionEastImpl();
+
+    // screen_snake_game
+    void gotoscreen_snake_gameScreenWipeTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP
