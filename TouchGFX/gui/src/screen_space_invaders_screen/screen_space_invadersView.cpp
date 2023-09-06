@@ -104,7 +104,7 @@ void screen_space_invadersView::handleTickEvent()
 				if( !enemies[i].isVisible() )
 					continue;
 
-				if( pseudo_random(tick) == 8 ) {
+				if( pseudo_random(tick) < 10 && tick % 13 == 0 ) {
 					bullet_enemy.setVisible(true);
 					bullet_enemy.setXY(enemies[i].getX() + enemies[i].getWidth()/2, enemies[i].getY() + enemies[i].getHeight());
 					bullet_enemy.invalidate();
