@@ -17,6 +17,10 @@ screen_space_invadersView::screen_space_invadersView()
 	bullet.setXY(-1, -1);
 	bullet.invalidate();
 
+	bullet_enemy.setVisible(false);
+	bullet_enemy.setXY(-1, -1);
+	bullet_enemy.invalidate();
+
 	lbl_game_over.setVisible(false);
 	lbl_game_over.invalidate();
 
@@ -69,6 +73,7 @@ void screen_space_invadersView::tearDownScreen()
 
 void screen_space_invadersView::handleTickEvent()
 {
+	static int tick = 0;
 	if( !invaders_game_over ) {
 		check_bullet_hitbox();
 
@@ -83,6 +88,7 @@ void screen_space_invadersView::handleTickEvent()
 			}
 		}
 
+
 		// move the ship
 		if( btn_left.getPressedState() && ship.getX() > 0 ) {
 			ship.setX(ship.getX() - SHIP_MOVE_SPEED);
@@ -92,10 +98,31 @@ void screen_space_invadersView::handleTickEvent()
 		}
 		ship.getParent()->invalidate();
 
+		// 1 enemy can fire a bullet, if the bullet isn't already in the air (~20% chance)
+		if( !bullet_enemy.isVisible() ) {
+			for(int i = 0; i < NUM_OF_ENEMIES; ++i) {
+				if( !enemies[i].isVisible() )
+					continue;
+
+				if( pseudo_random(tick) == 8 ) {
+					bullet_enemy.setVisible(true);
+					bullet_enemy.setXY(enemies[i].getX() + enemies[i].getWidth()/2, enemies[i].getY() + enemies[i].getHeight());
+					bullet_enemy.invalidate();
+					break;
+				}
+			}
+		} else {
+			bullet_enemy.setY(bullet_enemy.getY() + BULLET_MOVE_SPEED);
+
+			if( bullet_enemy.getY() > SCREEN_HEIGHT ) {
+				bullet_enemy.setVisible(false);
+			}
+			bullet_enemy.invalidate();
+		}
+
 		// move all the enemies
 
 		static int pixels_moved = 0;
-		static int tick = 0;
 
 		if( ++tick%10 == 0 ) {
 			if( enemy_move_direction == MOVE_RIGHT ) {
@@ -220,18 +247,25 @@ void screen_space_invadersView::check_game_over()
 			continue;
 
 		if( (ship.getX() < enemies[i].getX()+enemies[i].getWidth()
-			&& ship.getX() > enemies[i].getX()
-			&& ship.getY() + ship.getHeight()/2 > enemies[i].getY()
-			&& ship.getY() + ship.getHeight()/2 < enemies[i].getY() + enemies[i].getHeight())
-			|| (ship.getX() + ship.getWidth() < enemies[i].getX()+enemies[i].getWidth()
-				&& ship.getX() + ship.getWidth() > enemies[i].getX()
-				&& ship.getY() + ship.getHeight()/2 > enemies[i].getY()
-				&& ship.getY() + ship.getHeight()/2 < enemies[i].getY() + enemies[i].getHeight())	)
+			&& ship.getX()+ship.getWidth() > enemies[i].getX()
+			&& ship.getY() + ship.getHeight() > enemies[i].getY()
+			&& ship.getY() + ship.getHeight()/2 < enemies[i].getY() + enemies[i].getHeight()))
 		{
 			// Enemy collided with the player
 			invaders_game_over = true;
 			return;
 		}
+	}
+
+	// check that the enemy bullet didn't hit the player
+	if( (ship.getX() < bullet_enemy.getX()+bullet_enemy.getWidth()
+		&& ship.getX()+ship.getWidth() > bullet_enemy.getX()
+		&& ship.getY() + ship.getHeight() > bullet_enemy.getY()
+		&& ship.getY() + ship.getHeight()/2 < bullet_enemy.getY() + bullet_enemy.getHeight()))
+	{
+		// Enemy collided with the player
+		invaders_game_over = true;
+		return;
 	}
 
 	// check that the enemy hasn't made it past the player
@@ -245,4 +279,18 @@ void screen_space_invadersView::check_game_over()
 			return;
 		}
 	}
+}
+
+int screen_space_invadersView::pseudo_random(int tick)
+{
+	int bullet_x = 7;
+	int bullet_y = 7;
+
+	if( bullet.getX() > 0 )
+		bullet_x = bullet.getX();
+
+	if( bullet.getX() > 0 )
+		bullet_y = bullet.getY();
+
+	return ((7*tick+13*ship.getX()) + (3*bullet_x+3*bullet_y)) % 100;
 }

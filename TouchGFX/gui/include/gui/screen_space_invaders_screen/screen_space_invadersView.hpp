@@ -36,6 +36,8 @@ public:
     virtual void fire_bullet();
     virtual void check_bullet_hitbox();
     virtual void check_game_over();
+
+    virtual int pseudo_random(int tick);
 protected:
 };
 

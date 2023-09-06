@@ -8,13 +8,13 @@
 ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:65:34:virtual touchgfx::Bitmap::BitmapFormat touchgfx::LCD16bpp::framebufferFormat() const	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
 ../../TouchGFX/generated/gui_generated/include/gui_generated/screen_space_invaders_screen/screen_space_invadersViewBase.hpp:27:18:virtual void screen_space_invadersViewBase::fire_bullet()	0	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:103:6:virtual void screen_space_invadersViewBase::setupScreen()	0	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:112:6:virtual void screen_space_invadersViewBase::setupScreen()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<screen_space_invadersViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = screen_space_invadersViewBase; T1 = const touchgfx::AbstractButton&]	4	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = screen_space_invadersViewBase; T1 = const touchgfx::AbstractButton&]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<screen_space_invadersViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:98:1:screen_space_invadersViewBase::~screen_space_invadersViewBase()	8	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:98:1:virtual screen_space_invadersViewBase::~screen_space_invadersViewBase()	16	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:108:6:void screen_space_invadersViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
-C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:10:1:screen_space_invadersViewBase::screen_space_invadersViewBase()	112	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:107:1:screen_space_invadersViewBase::~screen_space_invadersViewBase()	8	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:107:1:virtual screen_space_invadersViewBase::~screen_space_invadersViewBase()	16	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:117:6:void screen_space_invadersViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+C:/TouchGFXProjects/games/TouchGFX/generated/gui_generated/src/screen_space_invaders_screen/screen_space_invadersViewBase.cpp:10:1:screen_space_invadersViewBase::screen_space_invadersViewBase()	120	static

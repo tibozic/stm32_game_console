@@ -46,6 +46,8 @@ protected:
     touchgfx::ScalableImage ship;
     touchgfx::Line bullet;
     touchgfx::PainterRGB565 bulletPainter;
+    touchgfx::Line bullet_enemy;
+    touchgfx::PainterRGB565 bullet_enemyPainter;
     touchgfx::ButtonWithIcon btn_back;
     touchgfx::TextArea lbl_game_over;
     touchgfx::TextArea lbl_game_over_1;

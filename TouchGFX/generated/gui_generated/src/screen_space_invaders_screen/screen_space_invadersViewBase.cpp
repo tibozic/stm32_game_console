@@ -59,6 +59,15 @@ screen_space_invadersViewBase::screen_space_invadersViewBase() :
     bullet.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
     add(bullet);
 
+    bullet_enemy.setPosition(20, 52, 10, 26);
+    bullet_enemyPainter.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    bullet_enemy.setPainter(bullet_enemyPainter);
+    bullet_enemy.setStart(5, 5);
+    bullet_enemy.setEnd(5, 20);
+    bullet_enemy.setLineWidth(10);
+    bullet_enemy.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
+    add(bullet_enemy);
+
     btn_back.setXY(12, 12);
     btn_back.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_BACKSPACE_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_BACKSPACE_50_50_E8F6FB_SVG_ID));
     btn_back.setIconXY(-7, -7);
