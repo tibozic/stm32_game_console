@@ -1,7 +1,13 @@
-# STM32H750B-DK TBS
+# Igralna konzola na sistemu STM32H750
+Povezava do celotna poročila, ki vsebuje videe delovanja: 
+[Github](https://github.com/tibozic/stm32_game_console_porocilo/tree/master)
 
-The default IDE is set to STM32CubeIDE, to change IDE open the STM32H750B-DK.ioc with CubeMX and select from the supported IDEs (EWARM, MDK-ARM, and STM32CubeIDE). Supports flashing of the STM32H750B-DK board directly from TouchGFX Designer using GCC and STM32CubeProgrammer.Flashing the board requires STM32CubeProgrammer which can be downloaded from the ST webpage.
+Igralna konzola implementira naslednje igre na sistemu STM32H750:
+- Snake
+- Tic Tac Toe
+- Space invaders
 
-This TBS is configured for 272 x 480 pixels 16bpp screen resolution.
-
-Performance testing can be done using the GPIO pins designated with the following signals: VSYNC_FREQ - Pin PG3 (D2), RENDER_TIME - Pin PB7 (D0), FRAME_RATE - Pin PB6 (D1), MCU_ACTIVE - Pin PA6 (D3).
+## Tehnologije
+- STM32H750
+- C
+- TouchGFX
